@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!-- <PropertyList include="dhc3W-jsbsim-set.xml"> -->
+<!-- <PropertyList include="dhc3F-jsbsim-set.xml"> -->
+<!-- <PropertyList include="dhc3S-jsbsim-set.xml"> -->
+<PropertyList include="dhc3W-yasim-set.xml">
+<!-- <PropertyList include="dhc3F-yasim-set.xml"> -->
+<!-- <PropertyList include="dhc3S-yasim-set.xml"> -->
+
+  <sim>
+    <description>DHC 3 Otter</description>
+    <author>BARANGER Emmanuel (3D)</author>
+  </sim>
+
+</PropertyList>
+

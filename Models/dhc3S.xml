@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/dhc3/Models/dhc3.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Les roues -->
+  <model>
+    <path>Aircraft/dhc3/Models/wheels.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Les skis -->
+  <model>
+    <path>Aircraft/dhc3/Models/skis.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+      <pitch-deg> 0.000 </pitch-deg>
+    </offsets>
+  </model>
+
+</PropertyList>

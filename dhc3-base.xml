@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>BARANGER Emmanuel (3D)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>0.1 Alpha</status>
+   
+    <fuel-fraction>0.8</fuel-fraction>
+  
+    <sound>
+      <path>Aircraft/dhc3/Sounds/dhc3-sound.xml</path>
+    </sound>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+    </multiplay> 
+
+    <help>
+      <title>DHC 3 Otter</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew doors</desc>
+      </key>
+      <line>----------------------------------------------</line>
+      <key>
+        <name>D</name>
+        <desc>Open/Close passagers doors</desc>
+      </key>
+      <line>______________________________________________</line>
+    </help>
+
+  </sim>
+
+  <input>
+    <keyboard include="Nasal/dhc3-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <dhc3> 
+      <file>Aircraft/dhc3/Nasal/doors.nas</file>
+      <file>Aircraft/dhc3/Nasal/light.nas</file>
+    </dhc3>
+  </nasal>
+
+</PropertyList>
