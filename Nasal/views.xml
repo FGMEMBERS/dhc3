@@ -13,7 +13,7 @@
       <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
       <x-offset-m archive="y">  0.344 </x-offset-m>	<!-- Right -->
       <y-offset-m archive="y">  0.618 </y-offset-m>	<!-- Up    -->
-      <z-offset-m archive="y"> -3.789 </z-offset-m>	<!-- Back  -->
+      <z-offset-m archive="y"> -3.748 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg>-5</pitch-offset-deg>
       <default-field-of-view-deg>70</default-field-of-view-deg>
     </config>
@@ -40,7 +40,7 @@
     <config> 
       <x-offset-m archive="y"> -0.344 </x-offset-m>	<!-- Right -->
       <y-offset-m archive="y">  0.618 </y-offset-m>	<!-- Up    -->
-      <z-offset-m archive="y"> -3.789 </z-offset-m>	<!-- Back  -->
+      <z-offset-m archive="y"> -3.748 </z-offset-m>	<!-- Back  -->
       <pitch-offset-deg> -15.000 </pitch-offset-deg>
       <default-field-of-view-deg>70.0</default-field-of-view-deg>
     </config>

@@ -19,7 +19,7 @@
     <solve-weight idx="1" weight="0"/> -->
   </cruise>
   
-  <cockpit x="3.789" y="0.344" z="0.484" />
+  <cockpit x="3.748" y="0.344" z="0.618" />
 
   <fuselage ax="5.886" ay="0" az="-0.261" bx="-5.397" by="0" bz="-0.004" width="1.799" taper="0.75" midpoint="0.25" />
 

@@ -4,5 +4,192 @@
 
   <path>panel.ac</path>
 
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>panel1</object-name>
+    <object-name>panel2</object-name>
+    <object-name>manetteG</object-name>
+    <object-name>manetteD</object-name>
+    <object-name>manette1</object-name>
+    <object-name>manette2</object-name>
+    <object-name>manette3</object-name>
+    <object-name>yoke</object-name>
+    <object-name>yoke1</object-name>
+    <object-name>yoke2</object-name>
+    <object-name>LHpedal</object-name>
+    <object-name>RHpedal</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- asi -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.414 </y-m>
+      <z-m>  0.354 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ai -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/ai/ai-gauge.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m>  0.354 </z-m>
+    </offsets>
+  </model>
+
+  <!-- alt -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/alt/alt2-3d.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m>  0.354 </z-m>
+    </offsets>
+  </model>
+
+  <!-- turn -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.414 </y-m>
+      <z-m>  0.247 </z-m>
+    </offsets>
+  </model>
+
+  <!-- hdg -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/hdg/hdg-gauge.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m>  0.247 </z-m>
+    </offsets>
+  </model>
+
+  <!-- vsi -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/vsi/vsi-gauge.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m>  0.247 </z-m>
+    </offsets>
+  </model>
+
+  <!-- clock -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.414 </y-m>
+      <z-m>  0.143 </z-m>
+    </offsets>
+  </model>
+
+  <!-- adf -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.299 </y-m>
+      <z-m>  0.143 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ki206 -->
+  <model>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.178 </y-m>
+      <z-m>  0.143 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Yokes and pedals of DHC 6 by Syd ADAMS -->
+  <animation>
+    <type>translate</type>
+    <object-name>RHpedal</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>0.025</factor>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>LHpedal</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>0.025</factor>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Yoke</object-name>
+    <object-name>Yoke1</object-name>
+    <object-name>Yoke2</object-name>
+    <property>controls/flight/elevator</property>
+    <factor>10.0</factor>
+    <center>
+      <x-m>  0.409 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.445 </z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Yoke1</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>40.0</factor>
+    <center>
+      <x-m>  0.450 </x-m>
+      <y-m> -0.384 </y-m>
+      <z-m>  0.204 </z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Yoke2</object-name>
+    <property>controls/flight/aileron</property>
+    <factor>40.0</factor>
+    <center>
+      <x-m> 0.411 </x-m>
+      <y-m> 0.384 </y-m>
+      <z-m> 0.204 </z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+   </animation>
+
 </PropertyList>
 
