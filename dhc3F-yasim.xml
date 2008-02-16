@@ -1,5 +1,6 @@
-<!-- dhc3 : 2008 BARANGER Emmanuel -->
-<!-- Base : DHC-2 Beaver 2004 Syd Adams -->
+<!-- dhc3 : 2008 Emmanuel BARANGER
+                 Pierre GEOFFROY
+     Base : DHC-2 Beaver 2004 Syd Adams -->
 
 <airplane mass="5287" >
 
@@ -75,19 +76,19 @@
   -->
   <propeller x="5.32" y="0" z="-0.300"
 	     radius="1.65"
-	     cruise-speed="120" 
-	     cruise-rpm="711"
+             cruise-speed="120"
+	     cruise-rpm="1537"
 	     cruise-alt="6000" 
 	     cruise-power="550"
 	     takeoff-power="600"
-	     takeoff-rpm="800"
+	     takeoff-rpm="1730"
 	     mass="951"
-	     moment="124"
-	     min-rpm="200"
-	     max-rpm="800"
+	     moment="90"
+	     min-rpm="600"
+	     max-rpm="1730"
 	     fine-stop="0.8"
 	     coarse-stop="2"
-	     gear-ratio="0.3556">
+	     gear-ratio="0.769">
 	<piston-engine eng-rpm="2250" 
 			   eng-power="600"
 			   displacement="1344"
