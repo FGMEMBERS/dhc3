@@ -25,7 +25,7 @@
     <engine>
         <name>enginerun</name>
         <mode>looped</mode>
-        <path>Aircraft/dhc3/Sounds/waspjr.wav</path>
+        <path>Sounds/wasp.wav</path>
         <condition>
             <property>/engines/engine/running</property>
         </condition>
@@ -159,7 +159,7 @@
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
-      <path>Aircraft/dhc3/Sounds/flotte.wav</path>
+      <path>Sounds/wave.wav</path>
       <condition>
         <or>
           <property>/gear/gear[0]/wow</property>
@@ -177,7 +177,7 @@
 
     <squeal>
      <name>water</name>
-     <path>Aircraft/dhc3/Sounds/flotte.wav</path>
+     <path>Sounds/wave.wav</path>
      <condition>
        <or>
          <property>/gear/gear[0]/wow</property>
@@ -307,7 +307,7 @@
     <switch>
         <name>click on</name>
         <mode>once</mode>
-        <path>Aircraft/dhc3/Sounds/click.wav</path>
+        <path>Sounds/click.wav</path>
         <condition>
             <property>sim/Sounds/switch</property>
         </condition>
@@ -326,7 +326,7 @@
     <switch>
         <name>click off</name>
         <mode>once</mode>
-        <path>Aircraft/dhc3/Sounds/click.wav</path>
+        <path>Sounds/click.wav</path>
         <condition>
             <not>
                 <property>sim/Sounds/switch</property>

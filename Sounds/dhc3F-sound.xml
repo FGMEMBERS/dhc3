@@ -25,7 +25,7 @@
     <engine>
         <name>enginerun</name>
         <mode>looped</mode>
-        <path>Aircraft/dhc3/Sounds/waspjr.wav</path>
+        <path>Sounds/wasp.wav</path>
         <condition>
             <property>/engines/engine/running</property>
         </condition>
@@ -51,7 +51,7 @@
     <rumble>
       <name>rumble</name>
       <mode>looped</mode>
-      <path>Aircraft/dhc3/Sounds/flotte.wav</path>
+      <path>Sounds/wave.wav</path>
       <condition>
         <or>
           <property>/gear/gear[0]/wow</property>
@@ -69,7 +69,7 @@
 
     <squeal>
      <name>water</name>
-     <path>Aircraft/dhc3/Sounds/flotte.wav</path>
+     <path>Sounds/wave.wav</path>
      <condition>
        <or>
          <property>/gear/gear[0]/wow</property>
@@ -157,49 +157,12 @@
         <max-dist>4.0</max-dist>
     </stall>
 
-    <gear>
-        <name>gear</name>
-        <mode>in-transit</mode>
-        <path>Sounds/gear.wav</path>
-        <property>gear/gear[6]/position-norm</property>
-        <pitch>
-            <internal>dt_play</internal>
-            <offset>1.0</offset>
-            <factor>-0.001</factor>
-        </pitch>
-        <position>
-            <x>0.0</x>
-            <y>0</y>
-            <z>-2</z>
-        </position>
-        <reference-dist>5.0</reference-dist>
-        <max-dist>10.0</max-dist>
-    </gear>
-
-    <gear>
-        <name>gear-lock</name>
-        <path>Sounds/gear-lck.wav</path>
-        <condition>
-            <equals>
-                <property>gear/gear[6]/position-norm</property>
-                <value>0</value>
-            </equals>
-        </condition>
-        <position>
-            <x>0.0</x>
-            <y>0</y>
-            <z>-2</z>
-        </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>4.0</max-dist>
-    </gear>
-
  <!--                  Toggle Switches                  -->     
 
     <switch>
         <name>click on</name>
         <mode>once</mode>
-        <path>Aircraft/dhc3/Sounds/click.wav</path>
+        <path>Sounds/click.wav</path>
         <condition>
             <property>sim/Sounds/switch</property>
         </condition>
@@ -218,7 +181,7 @@
     <switch>
         <name>click off</name>
         <mode>once</mode>
-        <path>Aircraft/dhc3/Sounds/click.wav</path>
+        <path>Sounds/click.wav</path>
         <condition>
             <not>
                 <property>sim/Sounds/switch</property>
