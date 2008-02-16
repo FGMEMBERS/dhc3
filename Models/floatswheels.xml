@@ -27,7 +27,7 @@
     <type>rotate</type>
     <object-name>Ldamper</object-name>
     <object-name>roueAG</object-name>
-    <property>gear/gear[4]/compression-m</property>
+    <property>gear/gear[0]/compression-m</property>
     <factor>400</factor>
     <center>
       <x-m>-5.527</x-m>
@@ -36,7 +36,7 @@
     </center>
     <axis>
       <x>0</x>
-      <y>-1</y>
+      <y>1</y>
       <z>0</z>
     </axis>
   </animation>
@@ -45,7 +45,7 @@
     <type>rotate</type>
     <object-name>Rdamper</object-name>
     <object-name>roueAD</object-name>
-    <property>gear/gear[5]/compression-m</property>
+    <property>gear/gear[1]/compression-m</property>
     <factor>400</factor>
     <center>
       <x-m>-5.527</x-m>
@@ -54,7 +54,7 @@
     </center>
     <axis>
       <x>0</x>
-      <y>-1</y>
+      <y>1</y>
       <z>0</z>
     </axis>
   </animation>
@@ -63,7 +63,7 @@
     <type>translate</type>
     <object-name>roueFG</object-name>
     <object-name>axeFG</object-name>
-    <property>gear/gear[6]/position-norm</property>
+    <property>gear/gear[2]/position-norm</property>
     <interpolation>
       <entry><ind>0.0</ind><dep>-0.34</dep></entry>
       <entry><ind>1.0</ind><dep>0.0</dep></entry>
@@ -83,7 +83,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueFG</object-name>
-    <property>gear/gear[6]/compression-m</property>
+    <property>gear/gear[2]/compression-m</property>
     <factor>1.0</factor>
     <center>
       <x-m>-2.115</x-m>
@@ -102,7 +102,7 @@
     <type>translate</type>
     <object-name>roueFD</object-name>
     <object-name>axeFD</object-name>
-    <property>gear/gear[7]/position-norm</property>
+    <property>gear/gear[3]/position-norm</property>
     <interpolation>
       <entry><ind>0.0</ind><dep>-0.34</dep></entry>
       <entry><ind>1.0</ind><dep>0.0</dep></entry>
@@ -122,7 +122,7 @@
   <animation>
     <type>translate</type>
     <object-name>roueFD</object-name>
-    <property>gear/gear[7]/compression-m</property>
+    <property>gear/gear[3]/compression-m</property>
     <factor>1.0</factor>
     <center>
       <x-m>-2.115</x-m>
@@ -138,42 +138,8 @@
 
   <animation>
     <type>spin</type>
-    <object-name>roueFG</object-name>
-    <property>gear/gear[4]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -2.045 </x-m>
-      <y-m> -1.640 </y-m>
-      <z-m> -2.331 </z-m>
-    </center>
-    <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
-    <object-name>roueFD</object-name>
-    <property>gear/gear[5]/rollspeed-ms</property>
-    <factor> 30 </factor>
-    <center>
-      <x-m> -2.045 </x-m>
-      <y-m>  1.640 </y-m>
-      <z-m> -2.331 </z-m>
-    </center>
-    <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
     <object-name>roueAG</object-name>
-    <property>gear/gear[6]/rollspeed-ms</property>
+    <property>gear/gear[0]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -6.314 </x-m>
@@ -190,7 +156,7 @@
   <animation>
     <type>spin</type>
     <object-name>roueAD</object-name>
-    <property>gear/gear[7]/rollspeed-ms</property>
+    <property>gear/gear[1]/rollspeed-ms</property>
     <factor> 30 </factor>
     <center>
       <x-m> -6.314 </x-m>
@@ -204,4 +170,39 @@
     </axis>
   </animation>
 
+  <animation>
+    <type>spin</type>
+    <object-name>roueFG</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.045 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -2.331 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueFD</object-name>
+    <property>gear/gear[3]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.045 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -2.331 </z-m>
+    </center>
+    <axis>
+      <x>  0.000 </x>
+      <y> -1.000 </y>
+      <z>  0.000 </z>
+    </axis>
+  </animation>
+
 </PropertyList>
+
