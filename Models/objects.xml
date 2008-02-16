@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>objects.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>cables</object-name>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <object-name>Ldamper</object-name>
+    <object-name>Lstrut1</object-name>
+    <object-name>Lstrut2</object-name>
+    <object-name>Rdamper</object-name>
+    <object-name>Rstrut1</object-name>
+    <object-name>Rstrut2</object-name>
+    <object-name>paddle</object-name>
+    <object-name>LHrudderArm</object-name>
+    <object-name>RHrudderArm</object-name>
+    <object-name>barres</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailD</object-name>
+    <object-name>RHrudderArm</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <x-m>1.074</x-m>
+      <y-m>1.640</y-m>
+      <z-m>-1.632</z-m>
+    </center>
+    <axis>
+      <x>-0.087</x>
+      <y>0</y>
+      <z>0.996</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailD</object-name>
+    <property>controls/gear/water-rudder-down</property>
+    <factor>90</factor>
+    <center>
+      <x-m>1.074</x-m>
+      <y-m>1.640</y-m>
+      <z-m>-1.632</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailG</object-name>
+    <object-name>LHrudderArm</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <x-m>1.074</x-m>
+      <y-m>-1.640</y-m>
+      <z-m>-1.632</z-m>
+    </center>
+    <axis>
+      <x>-0.087</x>
+      <y>0</y>
+      <z>0.996</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailG</object-name>
+    <property>controls/gear/water-rudder-down</property>
+    <factor>90</factor>
+    <center>
+      <x-m>1.074</x-m>
+      <y-m>-1.640</y-m>
+      <z-m>-1.632</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

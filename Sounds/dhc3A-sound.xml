@@ -55,10 +55,12 @@
         <condition>
             <and>
                 <or>
-                    <property>/gear/gear[0]/wow</property>
-                    <property>/gear/gear[1]/wow</property>
+                    <property>/gear/gear[4]/wow</property>
+                    <property>/gear/gear[5]/wow</property>
+                    <property>/gear/gear[6]/wow</property>
+                    <property>/gear/gear[7]/wow</property>
                 </or>
-                <property>/gear/gear[0]/ground-is-solid</property>
+                <property>/gear/gear[4]/ground-is-solid</property>
             </and>
         </condition>
         <volume>
@@ -81,11 +83,13 @@
         <condition>
             <and>
                 <or>
-                    <property>/gear/gear[0]/wow</property>
-                    <property>/gear/gear[1]/wow</property>
+                    <property>/gear/gear[4]/wow</property>
+                    <property>/gear/gear[5]/wow</property>
+                    <property>/gear/gear[6]/wow</property>
+                    <property>/gear/gear[7]/wow</property>
                 </or>
                 <not>
-                    <property>/gear/gear[0]/ground-is-solid</property>
+                    <property>/gear/gear[4]/ground-is-solid</property>
                 </not>
             </and>
         </condition>
@@ -116,8 +120,10 @@
         <path>Sounds/squeal.wav</path>
         <condition>
             <or>
-                <property>/gear/gear[0]/wow</property>
-                <property>/gear/gear[1]/wow</property>
+               <property>/gear/gear[4]/wow</property>
+               <property>/gear/gear[5]/wow</property>
+               <property>/gear/gear[6]/wow</property>
+               <property>/gear/gear[7]/wow</property>
             </or>
         </condition>
         <volume>
@@ -148,6 +154,48 @@
         </position>
         <reference-dist>5.0</reference-dist>
         <max-dist>10.0</max-dist>
+    </squeal>
+
+    <rumble>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Aircraft/dhc3/Sounds/flotte.wav</path>
+      <condition>
+        <or>
+          <property>/gear/gear[0]/wow</property>
+          <property>/gear/gear[1]/wow</property>
+          <property>/gear/gear[2]/wow</property>
+          <property>/gear/gear[3]/wow</property>
+        </or>
+      </condition>
+      <volume>
+        <property>/velocities/airspeed-kt</property>
+        <type>log</type>
+        <factor>0.25</factor>
+      </volume>
+    </rumble>
+
+    <squeal>
+     <name>water</name>
+     <path>Aircraft/dhc3/Sounds/flotte.wav</path>
+     <condition>
+       <or>
+         <property>/gear/gear[0]/wow</property>
+         <property>/gear/gear[1]/wow</property>
+         <property>/gear/gear[2]/wow</property>
+         <property>/gear/gear[3]/wow</property>
+       </or>
+     </condition>
+     <volume>
+       <property>/velocities/speed-down-fps</property>
+       <factor>0.5</factor>
+       <max>1.0</max>
+     </volume>
+     <volume>
+       <property>/velocities/speed-down-fps</property>
+       <factor>0.5</factor>
+       <max>1.0</max>
+     </volume>
     </squeal>
 
     <flap>
@@ -217,7 +265,45 @@
         <max-dist>4.0</max-dist>
     </stall>
 
+    <gear>
+        <name>gear</name>
+        <mode>in-transit</mode>
+        <path>Sounds/gear.wav</path>
+        <property>gear/gear[6]/position-norm</property>
+        <pitch>
+            <internal>dt_play</internal>
+            <offset>1.0</offset>
+            <factor>-0.001</factor>
+        </pitch>
+        <position>
+            <x>0.0</x>
+            <y>0</y>
+            <z>-2</z>
+        </position>
+        <reference-dist>5.0</reference-dist>
+        <max-dist>10.0</max-dist>
+    </gear>
+
+    <gear>
+        <name>gear-lock</name>
+        <path>Sounds/gear-lck.wav</path>
+        <condition>
+            <equals>
+                <property>gear/gear[6]/position-norm</property>
+                <value>0</value>
+            </equals>
+        </condition>
+        <position>
+            <x>0.0</x>
+            <y>0</y>
+            <z>-2</z>
+        </position>
+        <reference-dist>2.0</reference-dist>
+        <max-dist>4.0</max-dist>
+    </gear>
+
  <!--                  Toggle Switches                  -->     
+
     <switch>
         <name>click on</name>
         <mode>once</mode>

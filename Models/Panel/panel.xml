@@ -27,19 +27,19 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/asi/asi.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
+      <x-m>  0.084 </x-m>
       <y-m> -0.414 </y-m>
-      <z-m>  0.354 </z-m>
+      <z-m>  0.353 </z-m>
     </offsets>
   </model>
 
   <!-- ai -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/ai/ai-gauge.xml</path>
+    <path>Aircraft/dhc3/Models/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
+      <x-m>  0.088 </x-m>
       <y-m> -0.299 </y-m>
-      <z-m>  0.354 </z-m>
+      <z-m>  0.353 </z-m>
     </offsets>
   </model>
 
@@ -47,9 +47,9 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/alt/alt2-3d.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
-      <y-m> -0.178 </y-m>
-      <z-m>  0.354 </z-m>
+      <x-m>  0.088 </x-m>
+      <y-m> -0.184 </y-m>
+      <z-m>  0.353 </z-m>
     </offsets>
   </model>
 
@@ -57,9 +57,9 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/turn/turn.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
+      <x-m>  0.084 </x-m>
       <y-m> -0.414 </y-m>
-      <z-m>  0.247 </z-m>
+      <z-m>  0.246 </z-m>
     </offsets>
   </model>
 
@@ -67,9 +67,9 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/hdg/hdg-gauge.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
+      <x-m>  0.084 </x-m>
       <y-m> -0.299 </y-m>
-      <z-m>  0.247 </z-m>
+      <z-m>  0.246 </z-m>
     </offsets>
   </model>
 
@@ -77,9 +77,9 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/vsi/vsi-gauge.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
-      <y-m> -0.178 </y-m>
-      <z-m>  0.247 </z-m>
+      <x-m>  0.084 </x-m>
+      <y-m> -0.184 </y-m>
+      <z-m>  0.246 </z-m>
     </offsets>
   </model>
 
@@ -87,7 +87,7 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
+      <x-m>  0.087 </x-m>
       <y-m> -0.414 </y-m>
       <z-m>  0.143 </z-m>
     </offsets>
@@ -97,7 +97,7 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/adf/adf.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
+      <x-m>  0.088 </x-m>
       <y-m> -0.299 </y-m>
       <z-m>  0.143 </z-m>
     </offsets>
@@ -107,13 +107,13 @@
   <model>
     <path>Aircraft/dhc3/Models/Panel/Instruments/ki206/ki206.xml</path>
     <offsets>
-      <x-m>  0.090 </x-m>
-      <y-m> -0.178 </y-m>
+      <x-m>  0.088 </x-m>
+      <y-m> -0.184 </y-m>
       <z-m>  0.143 </z-m>
     </offsets>
   </model>
 
-  <!-- Yokes and pedals of DHC 6 by Syd ADAMS -->
+  <!-- Yokes and pedals based on DHC 6 by Syd ADAMS -->
   <animation>
     <type>translate</type>
     <object-name>RHpedal</object-name>

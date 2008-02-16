@@ -12,6 +12,10 @@
       <path archive="y">Aircraft/dhc3/Models/dhc3W.xml</path>
     </model>
 
+    <sound>
+      <path>Aircraft/dhc3/Sounds/dhc3-sound.xml</path>
+    </sound>
+
     <startup>
       <splash-texture>Aircraft/dhc3/Splashs/dhc3W-splash.rgb</splash-texture>
     </startup>

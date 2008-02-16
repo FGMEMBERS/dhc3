@@ -10,10 +10,6 @@
    
     <fuel-fraction>0.8</fuel-fraction>
   
-    <sound>
-      <path>Aircraft/dhc3/Sounds/dhc3-sound.xml</path>
-    </sound>
-
     <multiplay>
       <chat_display>1</chat_display>
     </multiplay> 

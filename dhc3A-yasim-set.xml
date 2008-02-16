@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<PropertyList include="dhc3-base.xml">
+
+  <sim>
+
+    <description>DHC 3 Otter amphibious (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>dhc3A-yasim</aero>
+
+    <model>
+      <path archive="y">Aircraft/dhc3/Models/dhc3A.xml</path>
+    </model>
+
+    <sound>
+      <path>Aircraft/dhc3/Sounds/dhc3A-sound.xml</path>
+    </sound>
+
+    <startup>
+      <splash-texture>Aircraft/dhc3/Splashs/dhc3A-splash.rgb</splash-texture>
+    </startup>
+  
+  </sim>
+  
+</PropertyList>
