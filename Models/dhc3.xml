@@ -81,13 +81,23 @@
     </condition>
   </animation>
 
-  <!-- Tbleau de bord -->
+  <!-- Tableau de bord -->
   <model>
     <path>Aircraft/dhc3/Models/Panel/panel.xml</path>
     <offsets>
       <x-m> -4.569 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.085 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Intérieur -->
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/interior.xml</path>
+    <offsets>
+      <x-m> -0.927 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.555 </z-m>
     </offsets>
   </model>
 

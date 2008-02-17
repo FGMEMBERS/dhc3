@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>planchet</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- Les sièges passagers -->
+  <!-- Coté droit -->
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <offsets>
+      <x-m> -2.108 </x-m>
+      <y-m>  0.544 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <offsets>
+      <x-m> -1.374 </x-m>
+      <y-m>  0.544 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <offsets>
+      <x-m> -0.660 </x-m>
+      <y-m>  0.544 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <offsets>
+      <x-m>  0.960 </x-m>
+      <y-m>  0.479 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Coté gauche -->
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <offsets>
+      <x-m> -2.108 </x-m>
+      <y-m> -0.544 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <offsets>
+      <x-m> -1.374 </x-m>
+      <y-m> -0.544 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <offsets>
+      <x-m> -0.660 </x-m>
+      <y-m> -0.544 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <offsets>
+      <x-m>  0.960 </x-m>
+      <y-m> -0.479 </y-m>
+      <z-m>  0.314 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
+
