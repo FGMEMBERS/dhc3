@@ -1,11 +1,10 @@
 <?xml version="1.0"?>
-
 <PropertyList>
 
   <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
 
   <view n="100">
-    <name>Passanger Seat View</name>
+    <name>Co pilot Seat View</name>
     <internal archive="y">true</internal>
     <type>lookfrom</type>
     <config>
@@ -20,6 +19,21 @@
   </view>
 
   <view n="101">
+    <name>Passagers View</name>
+    <internal archive="y">true</internal>
+    <type>lookfrom</type>
+    <config>
+      <from-model type="bool">true</from-model>
+      <ground-level-nearplane-m type="double">0.5f</ground-level-nearplane-m>
+      <x-offset-m archive="y">  0.448 </x-offset-m>	<!-- Right -->
+      <y-offset-m archive="y">  0.552 </y-offset-m>	<!-- Up    -->
+      <z-offset-m archive="y"> -0.002 </z-offset-m>	<!-- Back  -->
+      <pitch-offset-deg>0</pitch-offset-deg>
+      <default-field-of-view-deg>55</default-field-of-view-deg>
+    </config>
+  </view>
+
+  <view n="102">
     <name>Tail Camera View</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
