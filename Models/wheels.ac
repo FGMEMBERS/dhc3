@@ -8,7 +8,7 @@ OBJECT poly
 name "axeA1"
 data 5
 axeA1
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 40
@@ -324,7 +324,7 @@ OBJECT poly
 name "axeA2"
 data 5
 axeA2
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 24
@@ -512,7 +512,7 @@ OBJECT poly
 name "barre"
 data 5
 barre
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 176
@@ -1400,7 +1400,7 @@ OBJECT poly
 name "roueA"
 data 5
 roueA
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -7972,7 +7972,7 @@ OBJECT poly
 name "roueD"
 data 5
 roueD
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -14544,7 +14544,7 @@ OBJECT poly
 name "roueG"
 data 5
 roueG
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 802

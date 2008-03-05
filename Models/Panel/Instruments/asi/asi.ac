@@ -428,7 +428,7 @@ OBJECT poly
 name "ASIface"
 data 7
 ASIface
-texture "asi.rgb"
+texture "asi.png"
 texrep 1 1
 crease 30.000000
 numvert 16
@@ -1244,7 +1244,7 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "glass.rgb"
+texture "glass.png"
 texrep 1 1
 crease 30.000000
 numvert 290

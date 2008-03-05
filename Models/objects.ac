@@ -10,7 +10,7 @@ OBJECT poly
 name "LHrudderArm"
 data 8
 Tube.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 45.000000
 numvert 25
@@ -205,7 +205,7 @@ OBJECT poly
 name "Paddle"
 data 8
 Mesh.007
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 45.000000
 numvert 22
@@ -397,7 +397,7 @@ OBJECT poly
 name "RHrudderArm"
 data 8
 Tube.002
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 45.000000
 numvert 25
@@ -600,7 +600,7 @@ OBJECT poly
 name "barres"
 data 10
 barres.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 450
@@ -3766,7 +3766,7 @@ OBJECT poly
 name "cables"
 data 10
 cables.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 36
@@ -3938,7 +3938,7 @@ OBJECT poly
 name "echelles"
 data 8
 echelles
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 896
@@ -7980,7 +7980,7 @@ OBJECT poly
 name "gouvernailD"
 data 15
 gouvernailD.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 45.000000
 numvert 44
@@ -8334,7 +8334,7 @@ OBJECT poly
 name "gouvernailG"
 data 15
 gouvernailG.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 45.000000
 numvert 44

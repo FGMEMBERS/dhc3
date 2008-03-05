@@ -10,7 +10,7 @@ OBJECT poly
 name "Ldamper"
 data 8
 Mesh.004
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -262,7 +262,7 @@ OBJECT poly
 name "Lstrut1"
 data 8
 Mesh.005
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -442,7 +442,7 @@ OBJECT poly
 name "Lstrut2"
 data 8
 Mesh.006
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -734,7 +734,7 @@ OBJECT poly
 name "Rdamper"
 data 8
 Mesh.008
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -986,7 +986,7 @@ OBJECT poly
 name "Rstrut1"
 data 8
 Mesh.009
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 18
@@ -1166,7 +1166,7 @@ OBJECT poly
 name "Rstrut2"
 data 8
 Mesh.010
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 32
@@ -1458,7 +1458,7 @@ OBJECT poly
 name "axeFD"
 data 9
 axeFD.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 50.000000
 numvert 16
@@ -1561,7 +1561,7 @@ OBJECT poly
 name "axeFG"
 data 9
 axeFG.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 50.000000
 numvert 16
@@ -1664,7 +1664,7 @@ OBJECT poly
 name "flotteurs"
 data 13
 flotteurs.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 550
@@ -6136,7 +6136,7 @@ OBJECT poly
 name "roueAD"
 data 10
 roueAD.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -12708,7 +12708,7 @@ OBJECT poly
 name "roueAG"
 data 10
 roueAG.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 802
@@ -19280,7 +19280,7 @@ OBJECT poly
 name "roueFD"
 data 10
 roueFD.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 50.000000
 numvert 1610
@@ -32420,7 +32420,7 @@ OBJECT poly
 name "roueFG"
 data 10
 roueFG.001
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 50.000000
 numvert 1610

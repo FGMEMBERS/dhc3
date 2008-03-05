@@ -8,7 +8,7 @@ OBJECT poly
 name "flotteurs0"
 data 10
 flotteurs0
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 592

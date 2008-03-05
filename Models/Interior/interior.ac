@@ -9,7 +9,7 @@ OBJECT poly
 name "planchet"
 data 8
 planchet
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 30

@@ -6,7 +6,7 @@ OBJECT poly
 name "skiA"
 data 4
 skiA
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 84
@@ -755,7 +755,7 @@ OBJECT poly
 name "skiD"
 data 4
 skiD
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 51
@@ -1194,7 +1194,7 @@ OBJECT poly
 name "skiG"
 data 4
 skiG
-texture "colors.rgb"
+texture "colors.png"
 texrep 1 1
 crease 30.000000
 numvert 51
