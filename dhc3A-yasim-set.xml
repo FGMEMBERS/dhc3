@@ -17,7 +17,7 @@
     </sound>
 
     <startup>
-      <splash-texture>Aircraft/dhc3/Splashs/dhc3A-splash.rgb</splash-texture>
+      <splash-texture>Aircraft/dhc3/Splashs/dhc3A-splash.png</splash-texture>
     </startup>
   
   </sim>
