@@ -7,7 +7,19 @@
     <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM)</author>
     <aircraft-version>0.1</aircraft-version>
     <status>0.1 Alpha</status>
-   
+
+    <flaps>
+      <setting>0.000</setting>
+      <setting>0.125</setting>
+      <setting>0.250</setting>
+      <setting>0.375</setting>
+      <setting>0.500</setting>
+      <setting>0.625</setting>
+      <setting>0.750</setting>
+      <setting>0.875</setting>
+      <setting>1.000</setting>
+    </flaps>
+
     <fuel-fraction>0.8</fuel-fraction>
   
     <multiplay>
@@ -27,6 +39,10 @@
       </key>
       <line>______________________________________________</line>
     </help>
+
+    <hud>
+      <font>led.txf</font>
+    </hud>
 
   </sim>
 

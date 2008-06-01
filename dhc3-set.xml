@@ -4,9 +4,9 @@
 <!-- <PropertyList include="dhc3F-jsbsim-set.xml"> -->
 <!-- <PropertyList include="dhc3S-jsbsim-set.xml"> -->
 <!-- <PropertyList include="dhc3A-jsbsim-set.xml"> -->
-<PropertyList include="dhc3W-yasim-set.xml">
+<!-- <PropertyList include="dhc3W-yasim-set.xml"> -->
 <!-- <PropertyList include="dhc3F-yasim-set.xml"> -->
-<!-- <PropertyList include="dhc3S-yasim-set.xml"> -->
+<PropertyList include="dhc3S-yasim-set.xml">
 <!-- <PropertyList include="dhc3A-yasim-set.xml"> -->
 
   <sim>

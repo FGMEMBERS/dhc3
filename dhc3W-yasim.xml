@@ -2,7 +2,7 @@
                  Pierre GEOFFROY 
      Base : DHC-2 Beaver 2004 Syd Adams -->
 
-<airplane mass="5287" >
+<airplane mass="4431">
 
   <approach speed="58" aoa="6" fuel="0.2" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
@@ -12,7 +12,7 @@
     <solve-weight idx="1" weight="0"/> -->
   </approach>
   
-  <cruise speed="139" alt="6000" fuel="1.0" >
+  <cruise speed="105" alt="6000" fuel="1.0" >
     <control-setting  axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting  axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting  axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
@@ -76,23 +76,25 @@
   -->
   <propeller x="5.32" y="0" z="-0.300"
 	     radius="1.65"
-             cruise-speed="120"
-	     cruise-rpm="1537"
+	     cruise-speed="90"
+	     cruise-rpm="1200"
 	     cruise-alt="6000" 
-	     cruise-power="550"
+	     cruise-power="400"
 	     takeoff-power="600"
-	     takeoff-rpm="1730"
-	     mass="951"
-	     moment="90"
+	     takeoff-rpm="1500"
+	     mass="985"
+	     moment="60"
 	     min-rpm="600"
-	     max-rpm="1730"
+	     max-rpm="1500"
 	     fine-stop="0.8"
 	     coarse-stop="2"
-	     gear-ratio="0.769">
+	     gear-ratio="0.667">
 	     <piston-engine eng-rpm="2250" 
 			    eng-power="600"
 			    displacement="1344"
-			    compression="6.0">
+			    compression="6.0"
+	           	    turbo-mul="1.487"
+	           	    wastegate-mp="36">
     	        <actionpt x="6.042" y="0.0" z="-0.300"/>
     	        <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
     	        <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
@@ -125,13 +127,34 @@
         <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
   </gear>
 
+  <!-- Wheels on water-->
+  <gear x="3.770" y="1.780" z="-2.156" 
+	compression="0.2"
+	spring="0.1"
+	sfric="1"
+	dfric="1" 
+	on-water="1"
+	on-solid="0"
+	ignored-by-solver="1">
+  </gear>
+
+  <gear x="3.770" y="-1.780" z="-2.156" 
+	compression="0.2"
+	spring="0.1"
+	sfric="1"
+	dfric="1"
+	on-water="1"
+	on-solid="0"
+	ignored-by-solver="1">
+  </gear>
+
   <!-- Fuel: Front 61 US gal - Center 102 US gal - Rear 50 US gal -->
-  <tank x="1.5" y="0" z="-0.7" capacity="265.7"/>
-  <tank x="0.0" y="0" z="-0.7" capacity="611.5"/>
-  <tank x="-1.5" y="0" z="-0.7" capacity="299.9"/>
+  <tank x="1.5" y="0" z="-0.7" capacity="367"/>
+  <tank x="0.0" y="0" z="-0.7" capacity="614"/>
+  <tank x="-1.5" y="0" z="-0.7" capacity="301"/>
 
   <!-- CG Théorique x=2.288 y=0 z=0.683 -->
-  <ballast x="8.64" y="0.001" z="0.0" mass="600" />
+  <ballast x="6.054" y="0.001" z="3.134" mass="600" />
 
 <!--  <weight x="0.75" y="0.0" z="-0.5" mass-prop="/sim/weight[0]/weight-lb"/>
   <weight x="-1.0" y="0" z="-0.5" mass-prop="/sim/weight[1]/weight-lb"/> -->
