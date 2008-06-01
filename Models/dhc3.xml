@@ -69,17 +69,15 @@
     <object-name>beacon</object-name>
   </animation>
 
-  <!-- Pilote invisible depuis le cockpit -->
-  <animation>
-    <type>select</type>
-    <object-name>pilote</object-name>
-    <condition>
-      <greater-than>
-        <property>sim/current-view/view-number</property>
-        <value>0</value>
-      </greater-than>
-    </condition>
-  </animation>
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/dhc3/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.999 </x-m>
+      <y-m> -0.355 </y-m>
+      <z-m> -0.064 </z-m>
+    </offsets>
+  </model>
 
   <!-- Tableau de bord -->
   <model>

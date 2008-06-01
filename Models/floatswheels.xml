@@ -99,36 +99,130 @@
       <pitch-deg> -90.000 </pitch-deg>
       <heading-deg> 0.000 </heading-deg>
     </offsets>
-  </model> 
+  </model>
 
   <animation>
-    <type>rotate</type>
+    <name>EnsembleAvantG</name>
+    <object-name>Ldamper</object-name>
+    <object-name>Lstrut2</object-name>
+    <object-name>roueAG</object-name>
+  </animation>
+
+  <animation>
+    <name>EnsembleAvantD</name>
+    <object-name>Rdamper</object-name>
+    <object-name>Rstrut2</object-name>
+    <object-name>roueAD</object-name>
+  </animation>
+
+  <animation>
+    <name>RoueAvantG</name>
     <object-name>Ldamper</object-name>
     <object-name>roueAG</object-name>
-    <property>gear/gear[0]/compression-m</property>
-    <factor>400</factor>
+  </animation>
+
+  <animation>
+    <name>RoueAvantD</name>
+    <object-name>Rdamper</object-name>
+    <object-name>roueAD</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>EnsembleAvantG</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>  0.0 </ind>
+        <dep> -0.28 </dep>
+      </entry>
+      <entry>
+        <ind> 1.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>-5.527</x-m>
-      <y-m>-1.640</y-m>
-      <z-m>-2.209</z-m>
+      <x-m> -6.375 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -1.880 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
+      <x> -0.042258 </x>
+      <y>  0.000000 </y>
+      <z> -0.099868 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>EnsembleAvantD</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>  0.00 </ind>
+        <dep> -0.28 </dep>
+      </entry>
+      <entry>
+        <ind> 1.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> -6.375 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -1.880 </z-m>
+    </center>
+    <axis>
+      <x> -0.042258 </x>
+      <y>  0.000000 </y>
+      <z> -0.099868 </z>
     </axis>
   </animation>
 
   <animation>
     <type>rotate</type>
-    <object-name>Rdamper</object-name>
-    <object-name>roueAD</object-name>
-    <property>gear/gear[1]/compression-m</property>
-    <factor>400</factor>
+    <object-name>RoueAvantG</object-name>
+    <property>gear/gear[0]/compression-m</property>
+    <interpolation>
+      <entry>
+        <ind> 0.00 </ind>
+        <dep> 0.00 </dep>
+      </entry>
+      <entry>
+        <ind>   1.0 </ind>
+        <dep> -50.0 </dep>
+      </entry>
+    </interpolation>
     <center>
-      <x-m>-5.527</x-m>
-      <y-m>1.640</y-m>
-      <z-m>-2.209</z-m>
+      <x-m> -6.395 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -2.054 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueAvantD</object-name>
+    <property>gear/gear[1]/compression-m</property>
+    <interpolation>
+      <entry>
+        <ind> 0.00 </ind>
+        <dep> 0.00 </dep>
+      </entry>
+      <entry>
+        <ind>   1.0 </ind>
+        <dep> -50.0 </dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> -6.395 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -2.054 </z-m>
     </center>
     <axis>
       <x>0</x>
@@ -143,8 +237,14 @@
     <object-name>axeFG</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry><ind>0.0</ind><dep>-0.34</dep></entry>
-      <entry><ind>1.0</ind><dep>0.0</dep></entry>
+      <entry>
+        <ind>0.0</ind>
+        <dep>-0.34</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind>
+        <dep>0.0</dep>
+      </entry>
     </interpolation>
     <center>
       <x-m>-2.115</x-m>

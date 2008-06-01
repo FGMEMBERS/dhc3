@@ -30,14 +30,14 @@
     <property>controls/flight/rudder</property>
     <factor>20</factor>
     <center>
-      <x-m>1.074</x-m>
-      <y-m>1.640</y-m>
-      <z-m>-1.632</z-m>
+      <x-m>  1.074 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -1.632 </z-m>
     </center>
     <axis>
-      <x>-0.087</x>
-      <y>0</y>
-      <z>0.996</z>
+      <x> -0.087 </x>
+      <y>  0.000 </y>
+      <z>  0.996 </z>
     </axis>
   </animation>
 
@@ -47,14 +47,14 @@
     <property>controls/gear/water-rudder-down</property>
     <factor>90</factor>
     <center>
-      <x-m>1.074</x-m>
-      <y-m>1.640</y-m>
-      <z-m>-1.632</z-m>
+      <x-m>  1.074 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -1.632 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -65,14 +65,14 @@
     <property>controls/flight/rudder</property>
     <factor>20</factor>
     <center>
-      <x-m>1.074</x-m>
-      <y-m>-1.640</y-m>
-      <z-m>-1.632</z-m>
+      <x-m>  1.074 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -1.632 </z-m>
     </center>
     <axis>
-      <x>-0.087</x>
-      <y>0</y>
-      <z>0.996</z>
+      <x> -0.087 </x>
+      <y>  0.000 </y>
+      <z>  0.996 </z>
     </axis>
   </animation>
 
@@ -82,15 +82,43 @@
     <property>controls/gear/water-rudder-down</property>
     <factor>90</factor>
     <center>
-      <x-m>1.074</x-m>
-      <y-m>-1.640</y-m>
-      <z-m>-1.632</z-m>
+      <x-m>  1.074 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -1.632 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <property>controls/gear/tailwheel-lock</property>
+    <interpolation>
+      <entry>
+        <ind> 1.0 </ind>
+        <dep> 0.0 </dep>
+      </entry>
+      <entry>
+        <ind>   0.0 </ind>
+        <dep> 115.0 </dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>  1.074 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.641 </z-m>
+    </center>
+    <axis>
+      <x> 0.0 </x>
+      <y> 1.0 </y>
+      <z> 0.0 </z>
     </axis>
   </animation>
 
 </PropertyList>
+
