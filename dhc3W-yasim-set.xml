@@ -10,6 +10,9 @@
 
     <model>
       <path archive="y">Aircraft/dhc3/Models/dhc3W.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
     </model>
 
     <sound>

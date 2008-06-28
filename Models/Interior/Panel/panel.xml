@@ -26,9 +26,19 @@
     <!-- Objets transparents -->
   </animation>
 
+  <!-- GPS -->
+  <model>
+    <path>Aircraft/Instruments-3d/zkv500/ZKV500.xml</path>
+    <offsets>
+      <x-m>  0.090 </x-m>
+      <y-m> -0.169 </y-m>
+      <z-m>  0.457 </z-m>
+    </offsets>
+  </model>
+
   <!-- asi -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/asi/asi.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.414 </y-m>
@@ -38,7 +48,7 @@
 
   <!-- ai -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/ai/ai.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.299 </y-m>
@@ -48,7 +58,7 @@
 
   <!-- alt -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.184 </y-m>
@@ -58,7 +68,7 @@
 
   <!-- turn -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/turn/turn.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.414 </y-m>
@@ -68,7 +78,7 @@
 
   <!-- hdg -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/hdg/hdg.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.299 </y-m>
@@ -78,7 +88,7 @@
 
   <!-- vsi -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.184 </y-m>
@@ -88,7 +98,7 @@
 
   <!-- clock -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/clock/clock.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.414 </y-m>
@@ -98,7 +108,7 @@
 
   <!-- adf -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/adf/adf.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/adf/adf.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.299 </y-m>
@@ -108,7 +118,7 @@
 
   <!-- ki206 -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/ki206/ki206.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m> -0.184 </y-m>
@@ -118,7 +128,7 @@
 
   <!-- Flaps gauge -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/flaps/flap-gauge.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/flaps/flap-gauge.xml</path>
     <offsets>
       <x-m>  0.087 </x-m>
       <y-m> -0.506 </y-m>
@@ -128,7 +138,7 @@
 
   <!-- manifold -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/engine/man-gauge.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/engine/man-gauge.xml</path>
     <offsets>
       <x-m>  0.088 </x-m>
       <y-m> -0.070 </y-m>
@@ -138,7 +148,7 @@
 
   <!-- rpm -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/engine/rpm-gauge.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/engine/rpm-gauge.xml</path>
     <offsets>
       <x-m> 0.088 </x-m>
       <y-m> 0.016 </y-m>
@@ -148,7 +158,7 @@
 
   <!-- Température carburant -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/fuel/carbtemp.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/fuel/carbtemp.xml</path>
     <offsets>
       <x-m>  0.088 </x-m>
       <y-m> -0.070 </y-m>
@@ -158,7 +168,7 @@
 
   <!-- Quantité carburant -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/fuel/fuel-qty.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/fuel/fuel-qty.xml</path>
     <offsets>
       <x-m> 0.088 </x-m>
       <y-m> 0.016 </y-m>
@@ -168,7 +178,7 @@
 
   <!-- Pression d'huile -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/oil/oilpsi.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/oil/oilpsi.xml</path>
     <offsets>
       <x-m>  0.088 </x-m>
       <y-m> -0.084 </y-m>
@@ -178,7 +188,7 @@
 
   <!-- Température d'huile -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/oil/oiltemp.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/oil/oiltemp.xml</path>
     <offsets>
       <x-m>  0.088 </x-m>
       <y-m> -0.029 </y-m>
@@ -188,7 +198,7 @@
 
   <!-- Ampère mètre -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/Instruments/amps/ammeter.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/amps/ammeter.xml</path>
     <offsets>
       <x-m> 0.088 </x-m>
       <y-m> 0.027 </y-m>

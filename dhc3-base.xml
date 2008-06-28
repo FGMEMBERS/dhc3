@@ -24,7 +24,15 @@
   
     <multiplay>
       <chat_display>1</chat_display>
-    </multiplay> 
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
 
     <help>
       <title>DHC 3 Otter</title>
@@ -44,6 +52,8 @@
       <font>led.txf</font>
     </hud>
 
+    <menubar include="Gui/dhc3-menu.xml"/>
+
   </sim>
 
   <input>
@@ -54,7 +64,16 @@
     <dhc3> 
       <file>Aircraft/dhc3/Nasal/doors.nas</file>
       <file>Aircraft/dhc3/Nasal/light.nas</file>
+      <file>Aircraft/dhc3/Nasal/liveries.nas</file>
+      <file>Aircraft/dhc3/Nasal/immat.nas</file>
     </dhc3>
+    <zkv500>
+      <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/MainScreens.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/TurnpointScreens.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/TaskScreens.nas</file>
+      <file>Aircraft/Instruments-3d/zkv500/AirportScreens.nas</file>
+    </zkv500>
   </nasal>
 
 </PropertyList>

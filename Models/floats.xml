@@ -11,6 +11,15 @@
     <!-- Objets transparents -->
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>flotteurs0</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
   <!-- Trainée gauche -->
   <model>
     <path>Aircraft/dhc3/Models/Effects/wakeG.xml</path>

@@ -15,12 +15,37 @@
     <object-name>Rdamper</object-name>
     <object-name>Rstrut1</object-name>
     <object-name>Rstrut2</object-name>
-    <object-name>paddle</object-name>
+    <object-name>Paddle</object-name>
     <object-name>LHrudderArm</object-name>
     <object-name>RHrudderArm</object-name>
     <object-name>barres</object-name>
+    <object-name>sousqueue</object-name>
+    <object-name>echelles</object-name>
 
     <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>cables</object-name>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <object-name>Ldamper</object-name>
+    <object-name>Lstrut1</object-name>
+    <object-name>Lstrut2</object-name>
+    <object-name>Rdamper</object-name>
+    <object-name>Rstrut1</object-name>
+    <object-name>Rstrut2</object-name>
+    <object-name>Paddle</object-name>
+    <object-name>LHrudderArm</object-name>
+    <object-name>RHrudderArm</object-name>
+    <object-name>barres</object-name>
+    <object-name>sousqueue</object-name>
+    <object-name>echelles</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
   </animation>
 
   <animation>

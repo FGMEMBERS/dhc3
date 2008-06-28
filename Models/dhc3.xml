@@ -4,6 +4,15 @@
 
   <path>dhc3.ac</path>
 
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/dhc3/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
@@ -69,6 +78,53 @@
     <object-name>beacon</object-name>
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>interieur</object-name>
+    <object-name>moteur</object-name>
+    <object-name>bol</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>avantvoletG</object-name>
+    <object-name>avantvoletD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>porteArG1</object-name>
+    <object-name>porteArG2</object-name>
+    <object-name>porteArD1</object-name>
+    <object-name>porteArD2</object-name>
+    <object-name>helice</object-name>
+    <object-name>porteAvG</object-name>
+    <object-name>porteAvD</object-name>
+    <object-name>ampouleGD</object-name>
+    <object-name>air</object-name>
+    <object-name>plusailes</object-name>
+    <object-name>echappe</object-name>
+    <object-name>tourechappe</object-name>
+    <object-name>dessous</object-name>
+    <object-name>pito</object-name>
+    <object-name>antenne</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
+  <!-- Immatriculation -->
+  <model>
+    <path>Aircraft/dhc3/Models/Immat/immat.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.000 </z-m>
+    </offsets>
+  </model>
+
   <!-- Pilote -->
   <model>
     <path>Aircraft/dhc3/Models/Pilot/pilot.xml</path>
@@ -81,7 +137,7 @@
 
   <!-- Tableau de bord -->
   <model>
-    <path>Aircraft/dhc3/Models/Panel/panel.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/panel.xml</path>
     <offsets>
       <x-m> -4.569 </x-m>
       <y-m>  0.000 </y-m>

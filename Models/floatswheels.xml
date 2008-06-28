@@ -23,6 +23,27 @@
     <!-- Objets transparents -->
   </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>flotteurs</object-name>
+    <object-name>Ldamper</object-name>
+    <object-name>Lstrut1</object-name>
+    <object-name>Lstrut2</object-name>
+    <object-name>Rdamper</object-name>
+    <object-name>Rstrut1</object-name>
+    <object-name>Rstrut2</object-name>
+    <object-name>roueFG</object-name>
+    <object-name>roueFD</object-name>
+    <object-name>roueAG</object-name>
+    <object-name>roueAD</object-name>
+    <object-name>axeFG</object-name>
+    <object-name>axeFD</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+  </animation>
+
   <!-- Trainée gauche -->
   <model>
     <path>Aircraft/dhc3/Models/Effects/wakeGA.xml</path>
