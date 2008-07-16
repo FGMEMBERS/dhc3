@@ -52,7 +52,7 @@
       <font>led.txf</font>
     </hud>
 
-    <menubar include="Gui/dhc3-menu.xml"/>
+    <menubar include="Dialogs/dhc3-menu.xml"/>
 
   </sim>
 
