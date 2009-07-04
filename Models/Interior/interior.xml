@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
@@ -13,6 +13,37 @@
     <object-name>siege2</object-name>
 
     <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+    <object-name>intvitreAvG</object-name>
+    <object-name>intvitreAvD</object-name>
+    <object-name>intvitreArG1</object-name>
+    <object-name>intvitreArG2</object-name>
+    <object-name>intvitreArD1</object-name>
+    <object-name>intvitreArD2</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>shader.png</texture>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreAvG</object-name>
+    <object-name>intvitreAvD</object-name>
+    <object-name>intvitreArG1</object-name>
+    <object-name>intvitreArG2</object-name>
+    <object-name>intvitreArD1</object-name>
+    <object-name>intvitreArD2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intvitres</object-name>
+    <object-name>intvitreAvG</object-name>
+    <object-name>intvitreAvD</object-name>
+    <object-name>intvitreArG1</object-name>
+    <object-name>intvitreArG2</object-name>
+    <object-name>intvitreArD1</object-name>
+    <object-name>intvitreArD2</object-name>
   </animation>
 
   <!-- Pilote -->
@@ -109,6 +140,105 @@
       <z-m> -0.244 </z-m>
     </offsets>
   </model>
+
+  <!-- Porte -->
+  <animation>
+    <type>rotate</type>
+    <object-name>intvitreArG1</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 130.0 </factor>
+    <center>
+      <x-m> -1.324 </x-m>
+      <y-m> -0.899 </y-m>
+      <z-m> -0.065 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intvitreArG2</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 130 </factor>
+    <center>
+      <x-m> -0.268 </x-m>
+      <y-m> -0.850 </y-m>
+      <z-m>  0.061 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intvitreAvG</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> -130.0 </factor>
+    <axis>
+      <x1-m> -4.307 </x1-m>
+      <y1-m> -0.775 </y1-m>
+      <z1-m> -0.181 </z1-m>
+      <x2-m> -4.314 </x2-m>
+      <y2-m> -0.743 </y2-m>
+      <z2-m>  0.068 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intvitreAvD</object-name>
+    <property>instrumentation/doors/crew/position-norm</property>
+    <factor> 130.0 </factor>
+    <axis>
+      <x1-m> -4.307 </x1-m>
+      <y1-m>  0.775 </y1-m>
+      <z1-m> -0.181 </z1-m>
+      <x2-m> -4.314 </x2-m>
+      <y2-m>  0.743 </y2-m>
+      <z2-m>  0.068 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intvitreArD1</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 130.0 </factor>
+    <center>
+      <x-m> -1.324 </x-m>
+      <y-m>  0.899 </y-m>
+      <z-m> -0.065 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>intvitreArD2</object-name>
+    <property>instrumentation/doors/passenger/position-norm</property>
+    <factor> 130 </factor>
+    <center>
+      <x-m> -0.268 </x-m>
+      <y-m>  0.850 </y-m>
+      <z-m>  0.061 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
 
 </PropertyList>
 

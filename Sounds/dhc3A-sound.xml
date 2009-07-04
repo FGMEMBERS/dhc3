@@ -1,118 +1,120 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-<fx>
+
+  <fx>
+
     <crank>
-        <name>cranking</name>
-        <mode>looped</mode>
-        <path>Aircraft/dhc3/Sounds/starter.wav</path>
-        <condition>
-            <property>/engines/engine/cranking</property>
-        </condition>
-        <volume>
-            <property>/engines/engine/cranking</property>
-            <offset>0.5</offset>
-        </volume>
-        <position>
-            <x>-2.0</x>
-            <y>0</y>
-            <z>0</z>
-        </position>
-        <reference-dist>5.0</reference-dist>
-        <max-dist>10.0</max-dist>
+      <name>cranking</name>
+      <mode>looped</mode>
+      <path>Aircraft/dhc3/Sounds/starter.wav</path>
+      <condition>
+        <property>/engines/engine/cranking</property>
+      </condition>
+      <volume>
+        <property>/engines/engine/cranking</property>
+        <offset>0.5</offset>
+      </volume>
+      <position>
+        <x>-2.0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </crank>
 
     <engine>
-        <name>enginerun</name>
-        <mode>looped</mode>
-        <path>Sounds/wasp.wav</path>
-        <condition>
-            <property>/engines/engine/running</property>
-        </condition>
-        <volume>
-            <property>/controls/engines/engine/throttle</property>
-            <min>0.5</min>
-            <max>1.00</max>
-        </volume>
-        <pitch>
-            <property>/engines/engine/rpm</property>
-            <factor>0.0004</factor>
-            <offset>0.2</offset>
-        </pitch>
-        <position>
-            <x>-2.0</x>
-            <y>0</y>
-            <z>0</z>
-        </position>
-        <reference-dist>150.0</reference-dist>
-        <max-dist>1000.0</max-dist>
+      <name>enginerun</name>
+      <mode>looped</mode>
+      <path>Sounds/wasp.wav</path>
+      <condition>
+        <property>/engines/engine/running</property>
+      </condition>
+      <volume>
+        <property>/controls/engines/engine/throttle</property>
+        <min>0.5</min>
+        <max>1.00</max>
+      </volume>
+      <pitch>
+        <property>/engines/engine/rpm</property>
+        <factor>0.0004</factor>
+        <offset>0.2</offset>
+      </pitch>
+      <position>
+        <x>-2.0</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
 
     <rumble>
-        <name>rumble</name>
-        <mode>looped</mode>
-        <path>Sounds/rumble.wav</path>
-        <condition>
-            <and>
-                <or>
-                    <property>/gear/gear[0]/wow</property>
-                    <property>/gear/gear[1]/wow</property>
-                    <property>/gear/gear[2]/wow</property>
-                    <property>/gear/gear[3]/wow</property>
-                </or>
-                <property>/gear/gear[0]/ground-is-solid</property>
-            </and>
-        </condition>
-        <volume>
-            <property>/velocities/groundspeed-kt</property>
-            <factor>0.4</factor>
-        </volume>
-        <position>
-            <x>-1.0</x>
-            <y>0</y>
-            <z>-2</z>
-        </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>5.0</max-dist>
+      <name>rumble</name>
+      <mode>looped</mode>
+      <path>Sounds/rumble.wav</path>
+      <condition>
+        <and>
+          <or>
+            <property>/gear/gear[0]/wow</property>
+            <property>/gear/gear[1]/wow</property>
+            <property>/gear/gear[2]/wow</property>
+            <property>/gear/gear[3]/wow</property>
+          </or>
+          <property>/gear/gear[0]/ground-is-solid</property>
+        </and>
+      </condition>
+      <volume>
+        <property>/velocities/groundspeed-kt</property>
+        <factor>0.4</factor>
+      </volume>
+      <position>
+        <x>-1.0</x>
+        <y>0</y>
+        <z>-2</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <splash>
-        <name>splash</name>
-        <mode>looped</mode>
-        <path>Sounds/rumble.wav</path>
-        <condition>
-            <and>
-                <or>
-                    <property>/gear/gear[0]/wow</property>
-                    <property>/gear/gear[1]/wow</property>
-                    <property>/gear/gear[2]/wow</property>
-                    <property>/gear/gear[3]/wow</property>
-                </or>
-                <not>
-                    <property>/gear/gear[0]/ground-is-solid</property>
-                </not>
-            </and>
-        </condition>
-        <volume>
-            <property>/velocities/groundspeed-kt</property>
-            <offset>0.0</offset>
-            <factor>0.02</factor>
-            <min>0.0</min>
-            <max>0.5</max>
-        </volume>
-        <pitch>
-            <property>/velocities/airspeed-kt</property>
-            <factor>0.01</factor>
-            <offset>1.2</offset>
-            <max>1.5</max> 
-        </pitch>
-        <position>
-            <x>-1.0</x>
-            <y>0</y>
-            <z>-2</z>
-        </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>5.0</max-dist>
+      <name>splash</name>
+      <mode>looped</mode>
+      <path>Sounds/rumble.wav</path>
+      <condition>
+        <and>
+          <or>
+            <property>/gear/gear[0]/wow</property>
+            <property>/gear/gear[1]/wow</property>
+            <property>/gear/gear[2]/wow</property>
+            <property>/gear/gear[3]/wow</property>
+          </or>
+          <not>
+            <property>/gear/gear[0]/ground-is-solid</property>
+          </not>
+        </and>
+      </condition>
+      <volume>
+        <property>/velocities/groundspeed-kt</property>
+        <offset>0.0</offset>
+        <factor>0.02</factor>
+        <min>0.0</min>
+        <max>0.5</max>
+      </volume>
+      <pitch>
+        <property>/velocities/airspeed-kt</property>
+        <factor>0.01</factor>
+        <offset>1.2</offset>
+        <max>1.5</max> 
+      </pitch>
+      <position>
+        <x>-1.0</x>
+        <y>0</y>
+        <z>-2</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </splash>
 
     <squeal>
@@ -152,8 +154,8 @@
             <y>0</y>
             <z>-2</z>
         </position>
-        <reference-dist>5.0</reference-dist>
-        <max-dist>10.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
 
     <rumble>
@@ -175,6 +177,8 @@
         <type>log</type>
         <factor>0.25</factor>
       </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rumble>
 
     <squeal>
@@ -200,6 +204,8 @@
        <factor>0.5</factor>
        <max>1.0</max>
      </volume>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </squeal>
 
     <flap>
@@ -215,8 +221,8 @@
             <y>0</y>
             <z>1</z>
         </position>
-        <reference-dist>2.5</reference-dist>
-        <max-dist>5.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </flap>
 
     <wind>
@@ -247,8 +253,8 @@
             <y>0</y>
             <z>0</z>
         </position>
-        <max-dist>2</max-dist>
-        <reference-dist>1</reference-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </wind>
 
     <stall>
@@ -265,8 +271,8 @@
             <y>0</y>
             <z>0</z>
         </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>4.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </stall>
 
     <gear>
@@ -284,8 +290,8 @@
             <y>0</y>
             <z>-2</z>
         </position>
-        <reference-dist>5.0</reference-dist>
-        <max-dist>10.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
     <gear>
@@ -302,50 +308,49 @@
             <y>0</y>
             <z>-2</z>
         </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>4.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </gear>
 
- <!--                  Toggle Switches                  -->     
-
+    <!--                  Toggle Switches                  -->     
     <switch>
-        <name>click on</name>
-        <mode>once</mode>
-        <path>Sounds/click.wav</path>
-        <condition>
-            <property>sim/Sounds/switch</property>
-        </condition>
-        <volume>
-            <offset>0.7</offset>
-        </volume>
-        <position>
-            <x>-0.5</x>
-            <y>0</y>
-            <z>0</z>
-        </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>4.0</max-dist>
+      <name>click on</name>
+      <mode>once</mode>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <property>sim/Sounds/switch</property>
+      </condition>
+      <volume>
+        <offset>0.7</offset>
+      </volume>
+      <position>
+        <x>-0.5</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </switch>
 
     <switch>
-        <name>click off</name>
-        <mode>once</mode>
-        <path>Sounds/click.wav</path>
-        <condition>
-            <not>
-                <property>sim/Sounds/switch</property>
-            </not>
-        </condition>
-        <volume>
-            <offset>0.7</offset>
-        </volume>
-        <position>
-            <x>-0.5</x>
-            <y>0</y>
-            <z>0</z>
-        </position>
-        <reference-dist>2.0</reference-dist>
-        <max-dist>4.0</max-dist>
+      <name>click off</name>
+      <mode>once</mode>
+      <path>Sounds/click.wav</path>
+      <condition>
+        <not>
+          <property>sim/Sounds/switch</property>
+        </not>
+      </condition>
+      <volume>
+        <offset>0.7</offset>
+      </volume>
+      <position>
+        <x>-0.5</x>
+        <y>0</y>
+        <z>0</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </switch>
 
     <rain>
@@ -370,8 +375,10 @@
         <factor>0.001</factor>
         <offset>1.0</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rain>
 
-</fx>
+  </fx>
 
 </PropertyList>

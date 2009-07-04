@@ -1,12 +1,12 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "paint" rgb 0.8 0.8 0.8 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 49 trans 0
+MATERIAL "DefaultWhite" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 2
 OBJECT poly
 name "FlapLever"
-data 4
-Cube
+data 9
+FlapLever
 texture "flaps.png"
 texrep 1 1
 crease 30.000000
@@ -59,7 +59,7 @@ kids 0
 OBJECT poly
 name "Flapgauge"
 data 9
-Plane.027
+Flapgauge
 texture "flaps.png"
 texrep 1 1
 crease 30.000000

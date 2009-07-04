@@ -1,7 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-<fx>
+
+  <fx>
     <crank>
         <name>cranking</name>
         <mode>looped</mode>
@@ -282,6 +283,6 @@
       </pitch>
     </rain>
 
-</fx>
+  </fx>
 
 </PropertyList>

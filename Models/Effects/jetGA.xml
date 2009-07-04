@@ -1,11 +1,11 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
   <particlesystem>
     <name>JetG</name>
 
-    <texture>wake.rgb</texture>
+    <texture>wake.png</texture>
 
     <emissive>false</emissive>
     <lighting>true</lighting>
