@@ -98,10 +98,10 @@
 			    compression="6.0"
 	           	    turbo-mul="1.487"
 	           	    wastegate-mp="36">
-    	        <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
-    	        <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
-    	        <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
-    	        <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+    	                    <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+    	                    <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+    	                    <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+    	                    <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
   	     </piston-engine>
   </propeller>
 
