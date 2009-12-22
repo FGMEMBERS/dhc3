@@ -24,4 +24,21 @@
     </offsets>
   </model>
 
+  <!-- Une ombre pour OSG -->
+  <model>
+    <name>shadowOSG</name>
+    <path>Aircraft/dhc3/Models/shadowW.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>shadowOSG</object-name>
+    <condition>
+      <equals>
+        <property>sim[0]/rendering/shadows-ai</property>
+        <value>true</value>
+      </equals>
+    </condition>
+  </animation>
+
 </PropertyList>

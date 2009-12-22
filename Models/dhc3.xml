@@ -43,6 +43,7 @@
     <object-name>dessous</object-name>
     <object-name>pito</object-name>
     <object-name>antenne</object-name>
+    <object-name>trous</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -124,6 +125,7 @@
     <object-name>dessous</object-name>
     <object-name>pito</object-name>
     <object-name>antenne</object-name>
+    <object-name>trous</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -487,11 +489,29 @@
     </offsets>
   </model>
 
+  <model>
+    <path>Aircraft/dhc3/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -2.613 </x-m>
+      <y-m> -8.742 </y-m>
+      <z-m>  1.116 </z-m>
+    </offsets>
+  </model>
+
   <!-- Lumière verte -->
   <model>
     <path>Aircraft/dhc3/Models/lights/GreenLight.xml</path>
     <offsets>
       <x-m> -2.623 </x-m>
+      <y-m>  8.742 </y-m>
+      <z-m>  1.116 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/dhc3/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -2.613 </x-m>
       <y-m>  8.742 </y-m>
       <z-m>  1.116 </z-m>
     </offsets>
