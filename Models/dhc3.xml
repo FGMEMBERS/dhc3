@@ -62,40 +62,6 @@
   </animation>
 
   <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
-    <object-name>vitres</object-name>
-    <object-name>vitreAvG</object-name>
-    <object-name>vitreAvD</object-name>
-    <object-name>vitreArG1</object-name>
-    <object-name>vitreArG2</object-name>
-    <object-name>vitreArD1</object-name>
-    <object-name>vitreArD2</object-name>
-    <object-name>lampeDG</object-name>
-    <object-name>lamperouge</object-name>
-    <object-name>lampeverte</object-name>
-    <object-name>beacon</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitres</object-name>
-    <object-name>vitreAvG</object-name>
-    <object-name>vitreAvD</object-name>
-    <object-name>vitreArG1</object-name>
-    <object-name>vitreArG2</object-name>
-    <object-name>vitreArD1</object-name>
-    <object-name>vitreArD2</object-name>
-    <object-name>propblur</object-name>
-    <object-name>propdisc</object-name>
-    <object-name>lampeDG</object-name>
-    <object-name>lamperouge</object-name>
-    <object-name>lampeverte</object-name>
-    <object-name>beacon</object-name>
-  </animation>
-
-  <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
     <object-name>moteur</object-name>
@@ -130,6 +96,100 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>moteur</object-name>
+    <object-name>bol</object-name>
+    <object-name>ailes</object-name>
+    <object-name>derive</object-name>
+    <object-name>aileronG</object-name>
+    <object-name>aileronD</object-name>
+    <object-name>avantvoletG</object-name>
+    <object-name>avantvoletD</object-name>
+    <object-name>voletG</object-name>
+    <object-name>voletD</object-name>
+    <object-name>profondeur</object-name>
+    <object-name>direction</object-name>
+    <object-name>porteArG1</object-name>
+    <object-name>porteArG2</object-name>
+    <object-name>porteArD1</object-name>
+    <object-name>porteArD2</object-name>
+    <object-name>helice</object-name>
+    <object-name>porteAvG</object-name>
+    <object-name>porteAvD</object-name>
+    <object-name>ampouleGD</object-name>
+    <object-name>air</object-name>
+    <object-name>plusailes</object-name>
+    <object-name>tourechappe</object-name>
+    <object-name>dessous</object-name>
+    <object-name>pito</object-name>
+    <object-name>antenne</object-name>
+  </effect>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitres</object-name>
+    <object-name>vitreAvG</object-name>
+    <object-name>vitreAvD</object-name>
+    <object-name>vitreArG1</object-name>
+    <object-name>vitreArG2</object-name>
+    <object-name>vitreArD1</object-name>
+    <object-name>vitreArD2</object-name>
+    <object-name>lampeDG</object-name>
+    <object-name>lamperouge</object-name>
+    <object-name>lampeverte</object-name>
+    <object-name>beacon</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitres</object-name>
+    <object-name>vitreAvG</object-name>
+    <object-name>vitreAvD</object-name>
+    <object-name>vitreArG1</object-name>
+    <object-name>vitreArG2</object-name>
+    <object-name>vitreArD1</object-name>
+    <object-name>vitreArD2</object-name>
+    <object-name>propblur</object-name>
+    <object-name>propdisc</object-name>
+    <object-name>lampeDG</object-name>
+    <object-name>lamperouge</object-name>
+    <object-name>lampeverte</object-name>
+    <object-name>beacon</object-name>
   </animation>
 
   <!-- Immatriculation -->
@@ -212,9 +272,9 @@
       <z-m> -0.300 </z-m>
     </center>
     <axis>
-      <x> -1.000 </x>
-      <y>  0.000 </y>
-      <z>  0.000 </z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -222,17 +282,17 @@
   <animation>
     <type>rotate</type>
     <object-name>profondeur</object-name>
-    <property>controls/flight/elevator</property>
-    <factor>15</factor>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> 15 </factor>
     <center>
       <x-m> 4.961 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.884 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 1.000 </y>
-      <z> 0.000 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -242,17 +302,17 @@
     <object-name>direction</object-name>
     <object-name>beacon</object-name>
     <object-name>beaconlight</object-name>
-    <property>controls/flight/rudder</property>
-    <factor>20</factor>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 20 </factor>
     <center>
       <x-m> 5.408 </x-m>
       <y-m> 0.000 </y-m>
       <z-m> 0.857 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -263,7 +323,7 @@
     <object-name>voletG</object-name>
     <object-name>aileronG</object-name>
     <property>surface-positions/left-flap-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -1.865 </x1-m>
       <y1-m> -1.933 </y1-m>
@@ -280,7 +340,7 @@
     <object-name>voletD</object-name>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-flap-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -1.865 </x1-m>
       <y1-m>  7.688 </y1-m>
@@ -296,7 +356,7 @@
     <type>rotate</type>
     <object-name>aileronG</object-name>
     <property>surface-positions/left-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -1.742 </x1-m>
       <y1-m> -4.576 </y1-m>
@@ -311,7 +371,7 @@
     <type>rotate</type>
     <object-name>aileronD</object-name>
     <property>surface-positions/right-aileron-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -1.742 </x1-m>
       <y1-m>  8.202 </y1-m>
@@ -327,7 +387,7 @@
     <type>rotate</type>
     <object-name>voletG</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -1.742 </x1-m>
       <y1-m> -0.837 </y1-m>
@@ -342,7 +402,7 @@
     <type>rotate</type>
     <object-name>voletD</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>-20.0</factor>
+    <factor> -20 </factor>
     <axis>
       <x1-m> -1.742 </x1-m>
       <y1-m>  4.576 </y1-m>
@@ -359,16 +419,16 @@
     <object-name>porteArG1</object-name>
     <object-name>vitreArG1</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> 130.0 </factor>
+    <factor> 130 </factor>
     <center>
       <x-m> -1.324 </x-m>
       <y-m> -0.899 </y-m>
       <z-m> -0.065 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z> -1.000 </z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
@@ -384,9 +444,9 @@
       <z-m>  0.061 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -396,7 +456,7 @@
     <object-name>porteAvG</object-name>
     <object-name>vitreAvG</object-name>
     <property>instrumentation/doors/crew/position-norm</property>
-    <factor> -130.0 </factor>
+    <factor> -130 </factor>
     <axis>
       <x1-m> -4.307 </x1-m>
       <y1-m> -0.775 </y1-m>
@@ -412,7 +472,7 @@
     <object-name>porteAvD</object-name>
     <object-name>vitreAvD</object-name>
     <property>instrumentation/doors/crew/position-norm</property>
-    <factor> 130.0 </factor>
+    <factor> 130 </factor>
     <axis>
       <x1-m> -4.307 </x1-m>
       <y1-m>  0.775 </y1-m>
@@ -428,16 +488,16 @@
     <object-name>porteArD1</object-name>
     <object-name>vitreArD1</object-name>
     <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> 130.0 </factor>
+    <factor> 130 </factor>
     <center>
       <x-m> -1.324 </x-m>
       <y-m>  0.899 </y-m>
       <z-m> -0.065 </z-m>
     </center>
     <axis>
-      <x> 0.000 </x>
-      <y> 0.000 </y>
-      <z> 1.000 </z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -453,9 +513,9 @@
       <z-m>  0.061 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y>  0.000 </y>
-      <z> -1.000 </z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
@@ -529,3 +589,4 @@
   </model>
 
 </PropertyList>
+

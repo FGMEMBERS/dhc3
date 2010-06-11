@@ -18,7 +18,41 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
   </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>flotteurs0</object-name>
+  </effect>
 
   <!-- Trainée gauche -->
   <model>
@@ -27,9 +61,9 @@
       <x-m>  0.992 </x-m>
       <y-m> -1.640 </y-m>
       <z-m> -1.594 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -40,9 +74,9 @@
       <x-m>  0.992 </x-m>
       <y-m>  1.640 </y-m>
       <z-m> -1.594 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -53,9 +87,9 @@
       <x-m> -6.223 </x-m>
       <y-m> -1.640 </y-m>
       <z-m> -1.852 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -66,9 +100,9 @@
       <x-m> -6.223 </x-m>
       <y-m>  1.640 </y-m>
       <z-m> -1.852 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -79,9 +113,9 @@
       <x-m> -2.635 </x-m>
       <y-m> -1.640 </y-m>
       <z-m> -1.896 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -92,9 +126,9 @@
       <x-m> -2.635 </x-m>
       <y-m>  1.640 </y-m>
       <z-m> -1.896 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 

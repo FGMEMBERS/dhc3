@@ -76,7 +76,7 @@
        MTOM      : 8000 lbs
   -->
   <propeller x="5.32" y="0" z="-0.300"
-	     radius="1.65"
+	     radius="1.5"
 	     cruise-speed="90"
 	     cruise-rpm="1200"
 	     cruise-alt="6000" 

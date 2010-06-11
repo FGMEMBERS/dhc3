@@ -46,14 +46,61 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
+<!--
+    <diffuse>
+      <red-prop>diffuse/red</red-prop>
+      <green-prop>diffuse/green</green-prop>
+      <blue-prop>diffuse/blue</blue-prop>
+    </diffuse>
+
+    <ambient>
+      <red-prop>ambient/red</red-prop>
+      <green-prop>ambient/green</green-prop>
+      <blue-prop>ambient/blue</blue-prop>
+    </ambient>
+-->
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+<!--
+    <shininess>
+      <shininess-prop>shininess</shininess-prop>
+    </shininess>
+-->
   </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>gouvernailG</object-name>
+    <object-name>gouvernailD</object-name>
+    <object-name>Ldamper</object-name>
+    <object-name>Lstrut1</object-name>
+    <object-name>Lstrut2</object-name>
+    <object-name>Rdamper</object-name>
+    <object-name>Rstrut1</object-name>
+    <object-name>Rstrut2</object-name>
+    <object-name>Paddle</object-name>
+    <object-name>LHrudderArm</object-name>
+    <object-name>RHrudderArm</object-name>
+    <object-name>barres</object-name>
+    <object-name>sousqueue</object-name>
+    <object-name>echelles</object-name>
+  </effect>
 
   <animation>
     <type>rotate</type>
     <object-name>gouvernailD</object-name>
     <object-name>RHrudderArm</object-name>
     <property>controls/flight/rudder</property>
-    <factor>20</factor>
+    <factor> 20 </factor>
     <center>
       <x-m>  1.074 </x-m>
       <y-m>  1.640 </y-m>
@@ -70,7 +117,7 @@
     <type>rotate</type>
     <object-name>gouvernailD</object-name>
     <property>controls/gear/water-rudder-down</property>
-    <factor>90</factor>
+    <factor> 90 </factor>
     <center>
       <x-m>  1.074 </x-m>
       <y-m>  1.640 </y-m>
@@ -88,7 +135,7 @@
     <object-name>gouvernailG</object-name>
     <object-name>LHrudderArm</object-name>
     <property>controls/flight/rudder</property>
-    <factor>20</factor>
+    <factor> 20 </factor>
     <center>
       <x-m>  1.074 </x-m>
       <y-m> -1.640 </y-m>
@@ -105,7 +152,7 @@
     <type>rotate</type>
     <object-name>gouvernailG</object-name>
     <property>controls/gear/water-rudder-down</property>
-    <factor>90</factor>
+    <factor> 90 </factor>
     <center>
       <x-m>  1.074 </x-m>
       <y-m> -1.640 </y-m>
@@ -124,14 +171,8 @@
     <object-name>gouvernailD</object-name>
     <property>controls/gear/tailwheel-lock</property>
     <interpolation>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
-      <entry>
-        <ind>   0.0 </ind>
-        <dep> 115.0 </dep>
-      </entry>
+      <entry><ind> 1 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0 </ind><dep> 115 </dep></entry>
     </interpolation>
     <center>
       <x-m>  1.074 </x-m>
@@ -139,9 +180,9 @@
       <z-m> -1.641 </z-m>
     </center>
     <axis>
-      <x> 0.0 </x>
-      <y> 1.0 </y>
-      <z> 0.0 </z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
