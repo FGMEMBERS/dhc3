@@ -6,10 +6,9 @@
   <model>
     <path>Aircraft/dhc3/Models/dhc3.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -17,10 +16,9 @@
   <model>
     <path>Aircraft/dhc3/Models/floatswheels.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -28,10 +26,9 @@
   <model>
     <path>Aircraft/dhc3/Models/objects.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-      <pitch-deg> 0.000 </pitch-deg>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
     </offsets>
   </model>
 
@@ -53,3 +50,4 @@
   </animation>
 
 </PropertyList>
+

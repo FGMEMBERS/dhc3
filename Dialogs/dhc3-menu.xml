@@ -17,7 +17,7 @@
         <label>Immatriculation</label>
         <binding>
           <command>nasal</command>
-          <script>dhc3.immat_dialog.toggle()</script>
+          <script>immat.immat_dialog.toggle()</script>
         </binding>
       </item>
     </menu>

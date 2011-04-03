@@ -44,81 +44,122 @@
     <texture>texture.png</texture>
   </animation>
 
-  <!-- Trainée gauche -->
+  <!-- Effets sur le sol -->
+  <!-- Roue avant gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/wakeGA.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -6.319 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -2.459 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue avant droite -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -6.319 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -2.459 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue centrale gauche -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground2.xml</path>
+    <offsets>
+      <x-m> -1.052 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -2.565 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue centrale droite -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground3.xml</path>
+    <offsets>
+      <x-m> -1.052 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -2.565 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Trainee gauche -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/wakes/wakeGA.xml</path>
     <offsets>
       <x-m>  0.992 </x-m>
       <y-m> -1.640 </y-m>
       <z-m> -1.594 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
-  <!-- Trainée droite -->
+  <!-- Trainee droite -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/wakeDA.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/wakeDA.xml</path>
     <offsets>
       <x-m>  0.992 </x-m>
       <y-m>  1.640 </y-m>
       <z-m> -1.594 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -45.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -45 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
   <!-- Eclaboussures, avant gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetGA.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetGA.xml</path>
     <offsets>
       <x-m> -6.223 </x-m>
       <y-m> -1.640 </y-m>
       <z-m> -1.852 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
   <!-- Eclaboussures, avant droite -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetDA.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetDA.xml</path>
     <offsets>
       <x-m> -6.223 </x-m>
       <y-m>  1.640 </y-m>
       <z-m> -1.852 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
   <!-- Eclaboussures, centre gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetmGA.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetmGA.xml</path>
     <offsets>
       <x-m> -2.635 </x-m>
       <y-m> -1.640 </y-m>
       <z-m> -1.896 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
   <!-- Eclaboussures, centre droite -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetmDA.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetmDA.xml</path>
     <offsets>
       <x-m> -2.635 </x-m>
       <y-m>  1.640 </y-m>
       <z-m> -1.896 </z-m>
-      <roll-deg>    0.000 </roll-deg>
-      <pitch-deg> -90.000 </pitch-deg>
-      <heading-deg> 0.000 </heading-deg>
+      <roll-deg>    0 </roll-deg>
+      <pitch-deg> -90 </pitch-deg>
+      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -153,14 +194,8 @@
     <object-name>EnsembleAvantG</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.0 </ind>
-        <dep> -0.28 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> -0.28 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
     </interpolation>
     <center>
       <x-m> -6.375 </x-m>
@@ -179,14 +214,8 @@
     <object-name>EnsembleAvantD</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>  0.00 </ind>
-        <dep> -0.28 </dep>
-      </entry>
-      <entry>
-        <ind> 1.0 </ind>
-        <dep> 0.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> -0.28 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
     </interpolation>
     <center>
       <x-m> -6.375 </x-m>
@@ -205,14 +234,8 @@
     <object-name>RoueAvantG</object-name>
     <property>gear/gear[0]/compression-m</property>
     <interpolation>
-      <entry>
-        <ind> 0.00 </ind>
-        <dep> 0.00 </dep>
-      </entry>
-      <entry>
-        <ind>   1.0 </ind>
-        <dep> -50.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -50 </dep></entry>
     </interpolation>
     <center>
       <x-m> -6.395 </x-m>
@@ -231,14 +254,8 @@
     <object-name>RoueAvantD</object-name>
     <property>gear/gear[1]/compression-m</property>
     <interpolation>
-      <entry>
-        <ind> 0.00 </ind>
-        <dep> 0.00 </dep>
-      </entry>
-      <entry>
-        <ind>   1.0 </ind>
-        <dep> -50.0 </dep>
-      </entry>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -50 </dep></entry>
     </interpolation>
     <center>
       <x-m> -6.395 </x-m>
@@ -246,9 +263,9 @@
       <z-m> -2.054 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -258,24 +275,18 @@
     <object-name>axeFG</object-name>
     <property>gear/gear[2]/position-norm</property>
     <interpolation>
-      <entry>
-        <ind>0.0</ind>
-        <dep>-0.34</dep>
-      </entry>
-      <entry>
-        <ind>1.0</ind>
-        <dep>0.0</dep>
-      </entry>
+      <entry><ind> 0 </ind><dep> -0.34 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
     </interpolation>
     <center>
-      <x-m>-2.115</x-m>
-      <y-m>1.640</y-m>
-      <z-m>-2.335</z-m>
+      <x-m> -2.115 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -2.335 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>-1.0</z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
@@ -283,19 +294,18 @@
     <type>translate</type>
     <object-name>roueFG</object-name>
     <property>gear/gear[2]/compression-m</property>
-    <factor>1.0</factor>
+    <factor> 1 </factor>
     <center>
-      <x-m>-2.115</x-m>
-      <y-m>1.640</y-m>
-      <z-m>-2.335</z-m>
+      <x-m> -2.115 </x-m>
+      <y-m>  1.640 </y-m>
+      <z-m> -2.335 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>1.0</z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
-
 
   <animation>
     <type>translate</type>
@@ -303,18 +313,18 @@
     <object-name>axeFD</object-name>
     <property>gear/gear[3]/position-norm</property>
     <interpolation>
-      <entry><ind>0.0</ind><dep>-0.34</dep></entry>
-      <entry><ind>1.0</ind><dep>0.0</dep></entry>
+      <entry><ind> 0 </ind><dep> -0.34 </dep></entry>
+      <entry><ind> 1 </ind><dep>  0.00 </dep></entry>
     </interpolation>
     <center>
-      <x-m>-2.115</x-m>
-      <y-m>-1.640</y-m>
-      <z-m>-2.335</z-m>
+      <x-m> -2.115 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -2.335 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>-1.0</z>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
     </axis>
   </animation>
 
@@ -322,16 +332,16 @@
     <type>translate</type>
     <object-name>roueFD</object-name>
     <property>gear/gear[3]/compression-m</property>
-    <factor>1.0</factor>
+    <factor> 1 </factor>
     <center>
-      <x-m>-2.115</x-m>
-      <y-m>-1.640</y-m>
-      <z-m>-2.335</z-m>
+      <x-m> -2.115 </x-m>
+      <y-m> -1.640 </y-m>
+      <z-m> -2.335 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>0</y>
-      <z>1.0</z>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
     </axis>
   </animation>
 
@@ -346,9 +356,9 @@
       <z-m> -2.294 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -363,9 +373,9 @@
       <z-m> -2.294 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -380,9 +390,9 @@
       <z-m> -2.331 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -397,11 +407,10 @@
       <z-m> -2.331 </z-m>
     </center>
     <axis>
-      <x>  0.000 </x>
-      <y> -1.000 </y>
-      <z>  0.000 </z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
 </PropertyList>
-

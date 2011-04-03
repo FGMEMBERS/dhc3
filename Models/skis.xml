@@ -51,4 +51,35 @@
 -->
   </animation>
 
+  <!-- Effets sur le sol -->
+  <!-- Gauche -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -3.770 </x-m>
+      <y-m> -1.780 </y-m>
+      <z-m> -2.156 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Droite -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -3.770 </x-m>
+      <y-m>  1.780 </y-m>
+      <z-m> -2.156 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roulette -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground2.xml</path>   
+    <offsets>
+      <x-m> -5.156 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.680 </z-m>
+    </offsets>
+  </model>
+
 </PropertyList>

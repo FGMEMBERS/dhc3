@@ -54,9 +54,9 @@
     <object-name>flotteurs0</object-name>
   </effect>
 
-  <!-- Trainée gauche -->
+  <!-- Trainee gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/wakeG.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/wakeG.xml</path>
     <offsets>
       <x-m>  0.992 </x-m>
       <y-m> -1.640 </y-m>
@@ -67,9 +67,9 @@
     </offsets>
   </model> 
 
-  <!-- Trainée droite -->
+  <!-- Trainee droite -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/wakeD.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/wakeD.xml</path>
     <offsets>
       <x-m>  0.992 </x-m>
       <y-m>  1.640 </y-m>
@@ -82,7 +82,7 @@
 
   <!-- Eclaboussures, avant gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetG.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetG.xml</path>
     <offsets>
       <x-m> -6.223 </x-m>
       <y-m> -1.640 </y-m>
@@ -95,7 +95,7 @@
 
   <!-- Eclaboussures, avant droite -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetD.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetD.xml</path>
     <offsets>
       <x-m> -6.223 </x-m>
       <y-m>  1.640 </y-m>
@@ -108,7 +108,7 @@
 
   <!-- Eclaboussures, centre gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetmG.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetmG.xml</path>
     <offsets>
       <x-m> -2.635 </x-m>
       <y-m> -1.640 </y-m>
@@ -121,7 +121,7 @@
 
   <!-- Eclaboussures, centre droite -->
   <model>
-    <path>Aircraft/dhc3/Models/Effects/jetmD.xml</path>
+    <path>Aircraft/dhc3/Models/Effects/wakes/jetmD.xml</path>
     <offsets>
       <x-m> -2.635 </x-m>
       <y-m>  1.640 </y-m>

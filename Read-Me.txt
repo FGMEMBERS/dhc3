@@ -6,8 +6,8 @@ English/Français
 A little history
 ================
 
-
-====================
+De Havilland DHC 3
+==================
 
 Manufacturer                  : 
 Type                          : 
@@ -30,11 +30,12 @@ D Open/close pasagers doors
 Thanks
 ======
 
-Pierre GEOFFROY for new FDM
+Pierre GEOFFROY for help on the FDM
 
 ===============
 BARANGER Emmanuel
 February, 10, 2008. 
+April, 03, 2011
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr
@@ -46,7 +47,7 @@ embaranger@free.fr
 Un peu d'histoire
 =================
 
-
+De Havilland DHC 3
 ====================
 
 Constructeur                  :
@@ -71,11 +72,12 @@ D Ouvrir/fermer les portes arrière
 Remerciements
 =============
 
-Pierre GEOFFROY pour le nouveau FDM
+Pierre GEOFFROY pour l'aide sur le FDM
 
 ===============
 BARANGER Emmanuel
 10 Février 2008.
+03 Avril 2011.
 
 http://helijah.free.fr/flightgear/hangar.htm
 embaranger@free.fr

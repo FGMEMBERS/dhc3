@@ -188,7 +188,6 @@
   </gear>
 
   <!-- Floats on solid ground-->
-
   <gear x="6.407" y="1.64" z="-1.9"
 	compression="0.4"
 	spring="10"
