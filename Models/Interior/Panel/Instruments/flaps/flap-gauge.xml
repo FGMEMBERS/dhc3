@@ -1,14 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <path>flap-gauge.ac</path>
+  
+  <animation>
+    <object-name>Flapgauge</object-name>
+    <object-name>FlapLever</object-name>
+  </animation>
 
+  <animation>
+    <type>material</type>
+    <object-name>Flapgauge</object-name>
+    <object-name>FlapLever</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+  
   <animation>
     <type>translate</type>
     <object-name>FlapLever</object-name>
     <property>surface-positions/flap-pos-norm</property>
-    <factor>0.1240</factor>
+    <factor> 0.1240 </factor>
     <axis>
       <x>  0 </x>
       <y>  0 </y>

@@ -9,9 +9,13 @@
     <object-name>interieur</object-name>
     <object-name>planchet</object-name>
     <object-name>cloison</object-name>
-    <object-name>siege1</object-name>
-    <object-name>siege2</object-name>
-
+    <object-name>intporteAvG</object-name>
+    <object-name>intporteAvD</object-name>
+    <object-name>intporteArG1</object-name>
+    <object-name>intporteArG2</object-name>
+    <object-name>intporteArD1</object-name>
+    <object-name>intporteArD2</object-name>
+    
     <!-- Objets transparents -->
     <object-name>intvitres</object-name>
     <object-name>intvitreAvG</object-name>
@@ -22,10 +26,8 @@
     <object-name>intvitreArD2</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+  <effect>
+    <inherits-from>Aircraft/dhc3/Models/Effects/Glass/glass</inherits-from>
     <object-name>intvitres</object-name>
     <object-name>intvitreAvG</object-name>
     <object-name>intvitreAvD</object-name>
@@ -33,19 +35,8 @@
     <object-name>intvitreArG2</object-name>
     <object-name>intvitreArD1</object-name>
     <object-name>intvitreArD2</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>intvitres</object-name>
-    <object-name>intvitreAvG</object-name>
-    <object-name>intvitreAvD</object-name>
-    <object-name>intvitreArG1</object-name>
-    <object-name>intvitreArG2</object-name>
-    <object-name>intvitreArD1</object-name>
-    <object-name>intvitreArD2</object-name>
-  </animation>
-
+  </effect>
+  
   <!-- Pilote -->
   <model>
     <path>Aircraft/dhc3/Models/Pilot/pilot.xml</path>
@@ -66,10 +57,29 @@
     </offsets>
   </model>
 
+  <!-- Les sièges pilote et copilote -->
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -3.63050 </x-m>
+      <y-m> -0.34320 </y-m>
+      <z-m> -0.00258 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seat.xml</path>
+    <offsets>
+      <x-m> -3.63050 </x-m>
+      <y-m>  0.34320 </y-m>
+      <z-m> -0.00258 </z-m>
+    </offsets>
+  </model>
+  
   <!-- Les sièges passagers -->
   <!-- Coté droit -->
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatR.xml</path>
     <offsets>
       <x-m> -3.028 </x-m>
       <y-m>  0.544 </y-m>
@@ -78,7 +88,7 @@
   </model>
 
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatR.xml</path>
     <offsets>
       <x-m> -2.306 </x-m>
       <y-m>  0.544 </y-m>
@@ -87,7 +97,7 @@
   </model>
 
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatR.xml</path>
     <offsets>
       <x-m> -1.592 </x-m>
       <y-m>  0.544 </y-m>
@@ -96,7 +106,7 @@
   </model>
 
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatR.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatR.xml</path>
     <offsets>
       <x-m>  0.028 </x-m>
       <y-m>  0.479 </y-m>
@@ -106,7 +116,7 @@
 
   <!-- Coté gauche -->
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatL.xml</path>
     <offsets>
       <x-m> -3.040 </x-m>
       <y-m> -0.544 </y-m>
@@ -115,7 +125,7 @@
   </model>
 
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatL.xml</path>
     <offsets>
       <x-m> -2.306 </x-m>
       <y-m> -0.544 </y-m>
@@ -124,7 +134,7 @@
   </model>
 
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatL.xml</path>
     <offsets>
       <x-m> -1.592 </x-m>
       <y-m> -0.544 </y-m>
@@ -133,7 +143,7 @@
   </model>
 
   <model>
-    <path>Aircraft/dhc3/Models/Interior/seatL.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Seats/seatL.xml</path>
     <offsets>
       <x-m>  0.028 </x-m>
       <y-m> -0.479 </y-m>
@@ -143,10 +153,30 @@
 
   <!-- Porte -->
   <animation>
-    <type>rotate</type>
+    <name>IntPorteArriereGauche1</name>
+    <object-name>intporteArG1</object-name>
     <object-name>intvitreArG1</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> 130.0 </factor>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteArriereGauche1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>IntPorteArriereGauche1</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 130 </factor>
     <center>
       <x-m> -1.324 </x-m>
       <y-m> -0.899 </y-m>
@@ -158,11 +188,31 @@
       <z> -1 </z>
     </axis>
   </animation>
-
+  
+  <animation>
+    <name>IntPorteArriereGauche2</name>
+    <object-name>intporteArG2</object-name>
+    <object-name>intvitreArG2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteArriereGauche2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>rotate</type>
-    <object-name>intvitreArG2</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <object-name>IntPorteArriereGauche2</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 130 </factor>
     <center>
       <x-m> -0.268 </x-m>
@@ -175,12 +225,33 @@
       <z> 1 </z>
     </axis>
   </animation>
-
+  
+  <!-- Porte -->
+  <animation>
+    <name>IntPorteAvantGauche</name>
+    <object-name>intporteAvG</object-name>
+    <object-name>intvitreAvG</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteAvantGauche</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>rotate</type>
-    <object-name>intvitreAvG</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
-    <factor> -130.0 </factor>
+    <object-name>IntPorteAvantGauche</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> -130 </factor>
     <axis>
       <x1-m> -4.307 </x1-m>
       <y1-m> -0.775 </y1-m>
@@ -190,12 +261,32 @@
       <z2-m>  0.068 </z2-m>
     </axis>
   </animation>
-
+  
+  <animation>
+    <name>IntPorteAvantdroite</name>
+    <object-name>intporteAvD</object-name>
+    <object-name>intvitreAvD</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteAvantdroite</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.crew.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>rotate</type>
-    <object-name>intvitreAvD</object-name>
-    <property>instrumentation/doors/crew/position-norm</property>
-    <factor> 130.0 </factor>
+    <object-name>IntPorteAvantdroite</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 130 </factor>
     <axis>
       <x1-m> -4.307 </x1-m>
       <y1-m>  0.775 </y1-m>
@@ -205,12 +296,32 @@
       <z2-m>  0.068 </z2-m>
     </axis>
   </animation>
-
+  
+  <animation>
+    <name>IntPorteAvantArriereDroite1</name>
+    <object-name>intporteArD1</object-name>
+    <object-name>intvitreArD1</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteAvantArriereDroite1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>rotate</type>
-    <object-name>intvitreArD1</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
-    <factor> 130.0 </factor>
+    <object-name>IntPorteAvantArriereDroite1</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
+    <factor> 130 </factor>
     <center>
       <x-m> -1.324 </x-m>
       <y-m>  0.899 </y-m>
@@ -222,11 +333,31 @@
       <z> 1 </z>
     </axis>
   </animation>
-
+  
+  <animation>
+    <name>IntPorteAvantArriereDroite2</name>
+    <object-name>intporteArD2</object-name>
+    <object-name>intvitreArD2</object-name>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>IntPorteAvantArriereDroite2</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>nasal</command>
+        <script>doors.passenger.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+  
   <animation>
     <type>rotate</type>
-    <object-name>intvitreArD2</object-name>
-    <property>instrumentation/doors/passenger/position-norm</property>
+    <object-name>IntPorteAvantArriereDroite2</object-name>
+    <property>sim/model/door-positions/passenger/position-norm</property>
     <factor> 130 </factor>
     <center>
       <x-m> -0.268 </x-m>
@@ -239,6 +370,5 @@
       <z> -1 </z>
     </axis>
   </animation>
-
+  
 </PropertyList>
-

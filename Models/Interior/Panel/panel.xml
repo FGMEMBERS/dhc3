@@ -211,11 +211,11 @@
     <type>translate</type>
     <object-name>RHpedal</object-name>
     <property>controls/flight/rudder</property>
-    <factor>0.025</factor>
+    <factor> 0.025 </factor>
     <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -223,11 +223,11 @@
     <type>translate</type>
     <object-name>LHpedal</object-name>
     <property>controls/flight/rudder</property>
-    <factor>0.025</factor>
+    <factor> 0.025 </factor>
     <axis>
-      <x>1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 
@@ -237,16 +237,16 @@
     <object-name>Yoke1</object-name>
     <object-name>Yoke2</object-name>
     <property>controls/flight/elevator</property>
-    <factor>10.0</factor>
+    <factor> 10 </factor>
     <center>
       <x-m>  0.409 </x-m>
       <y-m>  0.000 </y-m>
       <z-m> -0.445 </z-m>
     </center>
     <axis>
-      <x>0</x>
-      <y>-1</y>
-      <z>0</z>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -254,16 +254,16 @@
     <type>rotate</type>
     <object-name>Yoke1</object-name>
     <property>controls/flight/aileron</property>
-    <factor>40.0</factor>
+    <factor> 40 </factor>
     <center>
       <x-m>  0.450 </x-m>
       <y-m> -0.384 </y-m>
       <z-m>  0.204 </z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
   </animation>
 
@@ -271,16 +271,16 @@
     <type>rotate</type>
     <object-name>Yoke2</object-name>
     <property>controls/flight/aileron</property>
-    <factor>40.0</factor>
+    <factor> 40 </factor>
     <center>
       <x-m> 0.411 </x-m>
       <y-m> 0.384 </y-m>
       <z-m> 0.204 </z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y>0</y>
-      <z>0</z>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
     </axis>
    </animation>
 
@@ -288,7 +288,7 @@
     <type>rotate</type>
     <object-name>throttle</object-name>
     <property>controls/engines/engine/throttle</property>
-    <factor>85</factor>
+    <factor> 85 </factor>
     <center>
       <x-m>  0.100 </x-m>
       <y-m> -0.059 </y-m>
@@ -305,7 +305,7 @@
     <type>rotate</type>
     <object-name>propeller</object-name>
     <property>controls/engines/engine/propeller-pitch</property>
-    <factor>85</factor>
+    <factor> 85 </factor>
     <center>
       <x-m> 0.100 </x-m>
       <y-m> 0.000 </y-m>
@@ -322,7 +322,7 @@
     <type>rotate</type>
     <object-name>mixture</object-name>
     <property>controls/engines/engine/mixture</property>
-    <factor>85</factor>
+    <factor> 85 </factor>
     <center>
       <x-m> 0.100 </x-m>
       <y-m> 0.059 </y-m>
@@ -336,4 +336,3 @@
   </animation>
 
 </PropertyList>
-

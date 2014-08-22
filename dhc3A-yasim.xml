@@ -1,25 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- dhc3 : 2008 Emmanuel BARANGER
                  Pierre GEOFFROY
      Base : DHC-2 Beaver 2004 Syd Adams -->
 
-<airplane mass="4431">
+<airplane mass="4431" version="YASIM_VERSION_CURRENT">
 
   <approach speed="58" aoa="6" fuel="0.2" >
     <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
     <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-<!--    <solve-weight idx="0" weight="180"/>
-    <solve-weight idx="1" weight="0"/> -->
+    <!--
+    <solve-weight idx="0" weight="180"/>
+    <solve-weight idx="1" weight="0"/> 
+    -->
   </approach>
   
   <cruise speed="105" alt="6000" fuel="1.0" >
     <control-setting  axis="/controls/engines/engine[0]/throttle" value="1.0"/>
     <control-setting  axis="/controls/engines/engine[0]/mixture" value="1.0"/>
     <control-setting  axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
-<!--    <solve-weight idx="0" weight="180"/>
-    <solve-weight idx="1" weight="0"/> -->
+    <!--
+    <solve-weight idx="0" weight="180"/>
+    <solve-weight idx="1" weight="0"/> 
+    -->
   </cruise>
   
   <cockpit x="3.748" y="0.344" z="0.618" />
@@ -76,36 +80,37 @@
        MTOM      : 8000 lbs
   -->
   <propeller x="5.32" y="0" z="-0.300"
-	     radius="1.5"
-	     cruise-speed="90"
-	     cruise-rpm="1200"
-	     cruise-alt="6000" 
-	     cruise-power="400"
-	     takeoff-power="600"
-	     takeoff-rpm="1500"
-	     mass="985"
-	     moment="60"
-	     min-rpm="600"
-	     max-rpm="1500"
-	     fine-stop="0.8"
-	     coarse-stop="2"
-	     gear-ratio="0.667">
-    	     <actionpt x="6.042" y="0.0" z="-0.300"/>
-    	     <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
+             radius="1.5"
+             cruise-speed="90"
+             cruise-rpm="1200"
+             cruise-alt="6000" 
+             cruise-power="400"
+             takeoff-power="600"
+             takeoff-rpm="1500"
+             mass="985"
+             moment="60"
+             min-rpm="600"
+             max-rpm="1500"
+             fine-stop="0.8"
+             coarse-stop="2"
+             gear-ratio="0.667">
+             <actionpt x="6.042" y="0.0" z="-0.300"/>
+             <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
              <piston-engine eng-rpm="2250" 
                             eng-power="600"
-			    displacement="1344"
+                            displacement="1344"
                             compression="6.0"
-			    turbo-mul="1.487"
-			    wastegate-mp="36">
-    		            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
-    		            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                            turbo-mul="1.487"
+                            wastegate-mp="36">
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
                             <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
-    		            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
-  	     </piston-engine>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+         </piston-engine>
   </propeller>
-
-  <!-- Retractable wheels 0/1/2/3 -->
+  
+  <!-- Retractable wheels -->
+  <!-- 0 -->
   <gear x="6.319" y="1.640" z="-2.459" 
         compression="0.2"  
         spring="2" 
@@ -120,6 +125,7 @@
         <control-speed control="EXTEND" transition-time="4"/>
   </gear>
 
+  <!-- 1 -->
   <gear x="6.319" y="-1.640" z="-2.459" 
         compression="0.2" 
         spring="2" 
@@ -134,6 +140,7 @@
         <control-speed control="EXTEND" transition-time="4"/>
   </gear>
 
+  <!-- 2 -->
   <gear x="1.052" y="1.640" z="-2.565" 
         compression="0.2" 
         spring="3.5" 
@@ -149,6 +156,7 @@
         <control-speed control="EXTEND" transition-time="4"/>
   </gear>
 
+  <!-- 3 -->
   <gear x="1.052" y="-1.640" z="-2.565" 
         compression="0.2" 
         spring="3.5" 
@@ -165,34 +173,7 @@
   </gear>
 
   <!-- Flotteurs -->
-  <!-- Avant 4/5 -->
-  <gear x="6.407" y="1.640" z="-1.9" 
-        compression="1.5" 
-        spring = "15" 
-        sfric = "0.85" 
-        dfric = "0.75" 
-        ignored-by-solver="0"
-        on-water="1" 
-        on-solid="0" 
-        reduce-friction-by-extension="1.15"
-        speed-planing="25" 
-        spring-factor-not-planing="0.25">
-  </gear>
-
-  <gear x="6.407" y="-1.640" z="-1.9" 
-        compression="1.5" 
-        spring = "15" 
-        sfric = "0.85"
-        dfric = "0.75" 
-        ignored-by-solver="0"
-        on-water="1" 
-        on-solid="0" 
-        reduce-friction-by-extension="1.15"
-        speed-planing="25" 
-        spring-factor-not-planing="0.25">
-  </gear>
-
-  <!-- Central 6/7 -->
+  <!-- 4 Central -->
   <gear x="2.364" y="1.640" z="-2.1" 
         compression="1.2" 
         spring = "15" 
@@ -206,6 +187,7 @@
         spring-factor-not-planing="0.4">
   </gear>
 
+  <!-- 5 -->
   <gear x="2.364" y="-1.640" z="-2.1" 
         compression="1.2" 
         spring = "15" 
@@ -219,7 +201,35 @@
         spring-factor-not-planing="0.4">
   </gear>
  
-  <!-- Arriere 8/9 -->
+  <!-- 6 Avant -->
+  <gear x="6.407" y="1.640" z="-1.9" 
+        compression="1.5" 
+        spring = "15" 
+        sfric = "0.85" 
+        dfric = "0.75" 
+        ignored-by-solver="0"
+        on-water="1" 
+        on-solid="0" 
+        reduce-friction-by-extension="1.15"
+        speed-planing="25" 
+        spring-factor-not-planing="0.25">
+  </gear>
+
+  <!-- 7 -->
+  <gear x="6.407" y="-1.640" z="-1.9" 
+        compression="1.5" 
+        spring = "15" 
+        sfric = "0.85"
+        dfric = "0.75" 
+        ignored-by-solver="0"
+        on-water="1" 
+        on-solid="0" 
+        reduce-friction-by-extension="1.15"
+        speed-planing="25" 
+        spring-factor-not-planing="0.25">
+  </gear>
+
+  <!-- 8 Arriere -->
   <gear x="-0.894" y="1.640" z="-1.8" 
         compression="1.8" 
         spring = "8" 
@@ -233,6 +243,7 @@
         spring-factor-not-planing="0.85">
   </gear>
 
+  <!-- 9 -->
   <gear x="-0.894" y="-1.640" z="-1.8" 
         compression="1.8" 
         spring = "8" 
@@ -247,7 +258,8 @@
   </gear>
 
   <!-- 2 more Floats, need to be at this position in the file to do not brake the animation
-    "reduce-friction-by-extension" is reduced to get steering control 10/11-->
+    "reduce-friction-by-extension" is reduced to get steering control -->
+  <!-- 10 -->
   <gear x="-1.317" y="1.640" z="-1.601" 
         compression="1.8" 
         spring="8" 
@@ -260,6 +272,8 @@
         speed-planing="25" spring-factor-not-planing="3">
         <control-input axis="/controls/gear/water-rudder-pos" control="STEER" invert ="true" square="true"/>
   </gear>
+  
+  <!-- 11 -->
   <gear x="-1.317" y="-1.640" z="-1.601" 
         compression="1.8" 
         spring="8" 
@@ -274,86 +288,92 @@
   </gear>
 
   <!-- Floats on solid ground-->
-
+  <!-- 12 -->
   <gear x="6.407" y="1.64" z="-1.9" 
-	compression="0.4"
-	spring="10"
-	sfric="1.5"
-	dfric="1.3"
-	skid="1"
-	ignored-by-solver="1">
+        compression="0.4"
+        spring="10"
+        sfric="1.5"
+        dfric="1.3"
+        skid="1"
+        ignored-by-solver="1">
   </gear>
 
+  <!-- 13 -->
   <gear x="6.407" y="-1.64" z="-1.9"
-	compression="0.4"
-	spring="10"
-	sfric="1.5"
-	dfric="1.3"
-	skid="1"
-	ignored-by-solver="1">
+        compression="0.4"
+        spring="10"
+        sfric="1.5"
+        dfric="1.3"
+        skid="1"
+        ignored-by-solver="1">
   </gear>
 
+  <!-- 14 -->
   <gear x="2.364" y="1.64" z="-2.1"
-	compression="0.2"
-	spring="10"
-	sfric="1.5"
-	dfric="1.3"
-	skid="1"
-	ignored-by-solver="1">
+        compression="0.2"
+        spring="10"
+        sfric="1.5"
+        dfric="1.3"
+        skid="1"
+        ignored-by-solver="1">
   </gear>
 
+  <!-- 15 -->
   <gear x="2.364" y="-1.64" z="-2.1"
-	compression="0.2"
-	spring="10"
-	sfric="1.5"
-	dfric="1.3"
-	skid="1"
-	ignored-by-solver="1">
+        compression="0.2"
+        spring="10"
+        sfric="1.5"
+        dfric="1.3"
+        skid="1"
+        ignored-by-solver="1">
   </gear>
 
+  <!-- 16 -->
   <gear x="-0.894" y="1.64" z="-1.8"
-	compression="0.2"
-	spring="10"
-	sfric="1.5"
-	dfric="1.3"
-	skid="1"
-	ignored-by-solver="1">
+        compression="0.2"
+        spring="10"
+        sfric="1.5"
+        dfric="1.3"
+        skid="1"
+        ignored-by-solver="1">
   </gear>
 
+  <!-- 17 -->
   <gear x="-0.894" y="-1.64" z="-1.8"
-	compression="0.2"
-	spring="10"
-	sfric="1.5"
-	dfric="1.3"
-	skid="1"
-	ignored-by-solver="1">
+        compression="0.2"
+        spring="10"
+        sfric="1.5"
+        dfric="1.3"
+        skid="1"
+        ignored-by-solver="1">
   </gear>
 
-  <!-- Retractable wheels on water-->
+  <!-- 18 Retractable wheels on water-->
   <gear x="1.052" y="1.64" z="-2.565"
-	compression="0.2"
-	spring="0.1"
-	sfric="1"
-	dfric="1"
-	retract-time="4"
-	on-water="1"
-	on-solid="0"
-	ignored-by-solver="1"
-	reduce-friction-by-extension="0.5">
+        compression="0.2"
+        spring="0.1"
+        sfric="1"
+        dfric="1"
+        retract-time="4"
+        on-water="1"
+        on-solid="0"
+        ignored-by-solver="1"
+        reduce-friction-by-extension="0.5">
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-speed control="EXTEND" transition-time="4"/>
   </gear>
 
+  <!-- 19 -->
   <gear x="1.052" y="-1.64" z="-2.565"
-	compression="0.2"
-	spring="0.1"
-	sfric="1"
-	dfric="1"
-	retract-time="4"
-	on-water="1"
-	on-solid="0"
-	ignored-by-solver="1"
-	reduce-friction-by-extension="0.5">
+        compression="0.2"
+        spring="0.1"
+        sfric="1"
+        dfric="1"
+        retract-time="4"
+        on-water="1"
+        on-solid="0"
+        ignored-by-solver="1"
+        reduce-friction-by-extension="0.5">
         <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
         <control-speed control="EXTEND" transition-time="4"/>
   </gear>
@@ -366,7 +386,9 @@
   <!-- CG Theorique x=2.288 y=0 z=0.683 -->
   <ballast x="6.054" y="0.001" z="-2" mass="600" />
 
-  <!--  <weight x="0.75" y="0.0" z="-0.5" mass-prop="/sim/weight[0]/weight-lb"/>
-  <weight x="-1.0" y="0" z="-0.5" mass-prop="/sim/weight[1]/weight-lb"/> -->
+  <!-- 
+  <weight x="0.75" y="0.0" z="-0.5" mass-prop="/sim/weight[0]/weight-lb"/>
+  <weight x="-1.0" y="0" z="-0.5" mass-prop="/sim/weight[1]/weight-lb"/>
+  -->
 
 </airplane>

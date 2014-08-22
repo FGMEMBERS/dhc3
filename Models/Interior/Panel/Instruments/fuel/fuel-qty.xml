@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <!-- fwd tank Syd Adams -->
 <PropertyList>
@@ -14,29 +14,23 @@
     <object-name>vitre</object-name>
   </animation>
 
-  <animation>
-    <type>noshadow</type>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/dhc3/Models/Effects/Glass/glass</inherits-from>
     <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
+  </effect>
+  
   <animation>
     <type>material</type>
     <object-name>face</object-name>
     <object-name>needle</object-name>
     <object-name>tank</object-name>
     <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
       <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
       <factor-prop>/sim/model//material/instruments/factor</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 
@@ -44,7 +38,7 @@
     <type>textranslate</type>
     <object-name>tank</object-name>
     <property>sim/signals/fdm-initialized</property>
-    <factor>0.0755</factor>
+    <factor> 0.0755 </factor>
     <axis>
       <x>  0 </x>
       <y> -1 </y>

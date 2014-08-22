@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -18,35 +18,11 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-<!--
-    <diffuse>
-      <red-prop>diffuse/red</red-prop>
-      <green-prop>diffuse/green</green-prop>
-      <blue-prop>diffuse/blue</blue-prop>
-    </diffuse>
-
-    <ambient>
-      <red-prop>ambient/red</red-prop>
-      <green-prop>ambient/green</green-prop>
-      <blue-prop>ambient/blue</blue-prop>
-    </ambient>
--->
-    <specular>
-      <red-prop>specular/red</red-prop>
-      <green-prop>specular/green</green-prop>
-      <blue-prop>specular/blue</blue-prop>
-    </specular>
-
     <emission>
       <red-prop>emission/red</red-prop>
       <green-prop>emission/green</green-prop>
       <blue-prop>emission/blue</blue-prop>
     </emission>
-<!--
-    <shininess>
-      <shininess-prop>shininess</shininess-prop>
-    </shininess>
--->
   </animation>
 
   <effect>
@@ -58,12 +34,10 @@
   <model>
     <path>Aircraft/dhc3/Models/Effects/wakes/wakeG.xml</path>
     <offsets>
-      <x-m>  0.992 </x-m>
-      <y-m> -1.640 </y-m>
-      <z-m> -1.594 </z-m>
-      <roll-deg>    0 </roll-deg>
+      <x-m> -2.32914 </x-m>
+      <y-m> -1.63978 </y-m>
+      <z-m> -2.32466 </z-m>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
 
@@ -71,65 +45,11 @@
   <model>
     <path>Aircraft/dhc3/Models/Effects/wakes/wakeD.xml</path>
     <offsets>
-      <x-m>  0.992 </x-m>
-      <y-m>  1.640 </y-m>
-      <z-m> -1.594 </z-m>
-      <roll-deg>    0 </roll-deg>
+      <x-m> -2.32914 </x-m>
+      <y-m>  1.63978 </y-m>
+      <z-m> -2.32466 </z-m>
       <pitch-deg> -45 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model> 
-
-  <!-- Eclaboussures, avant gauche -->
-  <model>
-    <path>Aircraft/dhc3/Models/Effects/wakes/jetG.xml</path>
-    <offsets>
-      <x-m> -6.223 </x-m>
-      <y-m> -1.640 </y-m>
-      <z-m> -1.852 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, avant droite -->
-  <model>
-    <path>Aircraft/dhc3/Models/Effects/wakes/jetD.xml</path>
-    <offsets>
-      <x-m> -6.223 </x-m>
-      <y-m>  1.640 </y-m>
-      <z-m> -1.852 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, centre gauche -->
-  <model>
-    <path>Aircraft/dhc3/Models/Effects/wakes/jetmG.xml</path>
-    <offsets>
-      <x-m> -2.635 </x-m>
-      <y-m> -1.640 </y-m>
-      <z-m> -1.896 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
-  <!-- Eclaboussures, centre droite -->
-  <model>
-    <path>Aircraft/dhc3/Models/Effects/wakes/jetmD.xml</path>
-    <offsets>
-      <x-m> -2.635 </x-m>
-      <y-m>  1.640 </y-m>
-      <z-m> -1.896 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg> -90 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
-    </offsets>
-  </model> 
-
+  
 </PropertyList>
