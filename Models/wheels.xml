@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>wheels.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>barre</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>roueG</object-name>
+    <object-name>roueD</object-name>
+    <object-name>roueA</object-name>
+    <object-name>barre</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>barre</object-name>
+  </effect>
+
+  <!-- Effets sur le sol -->
+  <!-- Roue gauche -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground0.xml</path>
+    <offsets>
+      <x-m> -3.770 </x-m>
+      <y-m> -1.780 </y-m>
+      <z-m> -2.156 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roue droite -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground1.xml</path>
+    <offsets>
+      <x-m> -3.770 </x-m>
+      <y-m>  1.780 </y-m>
+      <z-m> -2.156 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Roulette -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/ground/ground2.xml</path>   
+    <offsets>
+      <x-m> -5.156 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.680 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -3.770 </x-m>
+      <y-m> -1.780 </y-m>
+      <z-m> -1.793 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -3.770 </x-m>
+      <y-m>  1.780 </y-m>
+      <z-m> -1.793 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  5.156 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.515 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

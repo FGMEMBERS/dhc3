@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- dhc3 : 2008 Emmanuel BARANGER
+                 Pierre GEOFFROY 
+     Base : DHC-2 Beaver 2004 Syd Adams -->
+
+<airplane mass="4431" version="YASIM_VERSION_CURRENT">
+
+  <approach speed="58" aoa="6" fuel="0.2" >
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <!-- 
+    <solve-weight idx="0" weight="180"/>
+    <solve-weight idx="1" weight="0"/> 
+    -->
+  </approach>
+  
+  <cruise speed="105" alt="6000" fuel="1.0" >
+    <control-setting  axis="/controls/engines/engine[0]/throttle" value="1.0"/>
+    <control-setting  axis="/controls/engines/engine[0]/mixture" value="1.0"/>
+    <control-setting  axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <!--
+    <solve-weight idx="0" weight="180"/>
+    <solve-weight idx="1" weight="0"/>
+    -->
+  </cruise>
+  
+  <cockpit x="3.748" y="0.344" z="0.618" />
+
+  <fuselage ax="5.886" ay="0" az="-0.261" bx="-5.397" by="0" bz="-0.004" width="1.799" taper="0.75" midpoint="0.25" />
+
+  <wing x="2.288" y="0.523" z="0.683" 
+        chord="2.0" 
+        length="8.125"
+        taper="1.0" 
+        dihedral="3.5" 
+        camber="0.13">
+        <stall aoa="16" width="4" peak="1.5" />
+        <flap0 start="0.036" end="0.499" lift="1.6" drag="1.8"/>
+        <flap1 start="0.499" end="0.946" lift="1.3" drag="1.2"/>
+
+        <control-input control="FLAP0" axis="/controls/flight/flaps"/>
+        <control-output control="FLAP0" side="left" prop="/surface-positions/left-flap-pos-norm"/>
+        <control-output control="FLAP0" side="right" prop="/surface-positions/right-flap-pos-norm"/>
+        <control-output control="FLAP0" prop="/surface-positions/flap-pos-norm"/>
+
+        <control-input control="FLAP1" split="true" axis="/controls/flight/aileron"/>
+        <control-input control="FLAP1" split="true" axis="/controls/flight/aileron-trim"/>
+        <control-output control="FLAP1" prop="/surface-positions/left-aileron-pos-norm" side="left"/>
+        <control-output control="FLAP1" prop="/surface-positions/right-aileron-pos-norm" side="right"/> 
+  </wing>
+  
+  <hstab x="-4.977" y="0" z="0.866"  
+         chord="1.425"  
+         length="2.949"
+         taper="0.7">
+         <stall aoa="16" width="4" peak="1.5"/>
+         <flap0 start="0" end="1" lift="1.5" drag="1.2"/>
+         <control-input control="FLAP0" axis="/controls/flight/elevator"/>
+         <control-input control="FLAP0" axis="/controls/flight/elevator-trim"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+  </hstab>
+
+  <vstab x="-5.176" y="0" z="-0.136" 
+         chord="2.192" 
+         length="2.261"
+         taper="0.5"
+         sweep="10">
+         <stall aoa="14" width="3" peak="1.5" />
+         <flap0  start="0" end="1"  lift="1.6" drag="1.2"/>
+         <control-input control="FLAP0" axis="/controls/flight/rudder" invert="true"/>
+         <control-input control="FLAP0" axis="/controls/flight/rudder-trim" invert="true"/>
+         <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" min="1" max="-1"/>
+  </vstab>
+
+  <!--
+       Engine    : Pratt & Whitney R1340 S1H1G Wasp
+       Propeller : Hamilton Standard 3D40-6511A-9
+       MTOM      : 8000 lbs
+  -->
+  <propeller x="5.32" y="0" z="-0.300"
+             radius="1.5"
+             cruise-speed="90"
+             cruise-rpm="1200"
+             cruise-alt="6000" 
+             cruise-power="400"
+             takeoff-power="600"
+             takeoff-rpm="1500"
+             mass="985"
+             moment="60"
+             min-rpm="600"
+             max-rpm="1500"
+             fine-stop="0.8"
+             coarse-stop="2"
+             gear-ratio="0.667">
+             <actionpt x="6.042" y="0.0" z="-0.300"/>
+             <control-input control="ADVANCE" axis="/controls/engines/engine[0]/propeller-pitch"/>
+             <piston-engine eng-rpm="2250" 
+                            eng-power="600"
+                            displacement="1344"
+                            compression="6.0"
+                            turbo-mul="1.487"
+                            wastegate-mp="36">
+                            <control-input control="THROTTLE" axis="/controls/engines/engine[0]/throttle"/>
+                            <control-input control="STARTER" axis="/controls/engines/engine[0]/starter"/>
+                            <control-input control="MAGNETOS" axis="/controls/engines/engine[0]/magnetos"/>
+                            <control-input control="MIXTURE" axis="/controls/engines/engine[0]/mixture"/>
+         </piston-engine>
+  </propeller>
+
+  <gear x="3.770" y="1.780" z="-2.156" 
+        compression="0.2" 
+        sfric="0.5" 
+        dfric="0.5">
+        <control-input control="BRAKE" axis="/controls/gear/brake-parking"/>
+        <control-input control="BRAKE" axis="/controls/gear/brake-left"/>
+  </gear>
+
+  <gear x="3.770" y="-1.780" z="-2.156" 
+        compression="0.2" 
+        sfric="0.5" 
+        dfric="0.5">
+        <control-input control="BRAKE" axis="/controls/gear/brake-parking"/>
+        <control-input control="BRAKE" axis="/controls/gear/brake-right"/>
+  </gear>
+
+  <gear x="-5.156" y="0.0" z="-0.680" 
+        compression="0.2" 
+        sfric="1" 
+        dfric="1">
+        <control-input axis="/controls/flight/rudder" control="STEER" square="true" src0="-1.0" src1="1.0" dst0="0.5" dst1="-0.5"/>
+  </gear>
+
+  <!-- Wheels on water-->
+  <gear x="3.770" y="1.780" z="-2.156" 
+  compression="0.2"
+  spring="0.1"
+  sfric="1"
+  dfric="1" 
+  on-water="1"
+  on-solid="0"
+  ignored-by-solver="1">
+  </gear>
+
+  <gear x="3.770" y="-1.780" z="-2.156" 
+  compression="0.2"
+  spring="0.1"
+  sfric="1"
+  dfric="1"
+  on-water="1"
+  on-solid="0"
+  ignored-by-solver="1">
+  </gear>
+
+  <!-- Fuel: Front 61 US gal - Center 102 US gal - Rear 50 US gal -->
+  <tank x="1.5" y="0" z="-0.7" capacity="367"/>
+  <tank x="0.0" y="0" z="-0.7" capacity="614"/>
+  <tank x="-1.5" y="0" z="-0.7" capacity="301"/>
+
+  <!-- CG Theorique x=2.288 y=0 z=0.683 -->
+  <ballast x="6.054" y="0.001" z="-2" mass="600" />
+
+  <!--
+  <weight x="0.75" y="0.0" z="-0.5" mass-prop="/sim/weight[0]/weight-lb"/>
+  <weight x="-1.0" y="0" z="-0.5" mass-prop="/sim/weight[1]/weight-lb"/>
+  -->
+
+</airplane>

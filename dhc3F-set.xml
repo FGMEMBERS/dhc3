@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="dhc3-base.xml">
+
+  <sim>
+    
+    <description>DHC 3 Otter with floats (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM), Laurent HAYVEL (Texture)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>0.1 Alpha</status>
+    <flight-model>yasim</flight-model>
+    <aero>dhc3F-yasim</aero>
+    
+    <type type="string">seaplane</type>
+    
+    <rating>
+      <FDM type="int">     3 </FDM>
+      <systems type="int"> 3 </systems>
+      <cockpit type="int"> 3 </cockpit>
+      <model type="int">   4 </model>
+    </rating>
+    
+    <model>
+      <path archive="y">Aircraft/dhc3/Models/dhc3F.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+    
+    <sound>
+      <path>Aircraft/dhc3/Sounds/dhc3F-sound.xml</path>
+    </sound>
+    
+    <startup>
+      <splash-texture>Aircraft/dhc3/Splashs/dhc3F-splash.png</splash-texture>
+    </startup>
+    
+    <help include="Systems/dhc3AF-help.xml"/>
+    
+  </sim>
+
+  <input>
+    <keyboard include="Systems/dhc3AF-keyboard.xml"/>
+  </input>
+  
+</PropertyList>

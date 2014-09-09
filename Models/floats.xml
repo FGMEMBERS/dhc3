@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>floats.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>flotteurs0</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>flotteurs0</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <emission>
+      <red-prop>emission/red</red-prop>
+      <green-prop>emission/green</green-prop>
+      <blue-prop>emission/blue</blue-prop>
+    </emission>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>flotteurs0</object-name>
+  </effect>
+
+  <!-- Trainee gauche -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/wakes/wakeG.xml</path>
+    <offsets>
+      <x-m> -2.32914 </x-m>
+      <y-m> -1.63978 </y-m>
+      <z-m> -2.32466 </z-m>
+      <pitch-deg> -45 </pitch-deg>
+    </offsets>
+  </model> 
+
+  <!-- Trainee droite -->
+  <model>
+    <path>Aircraft/dhc3/Models/Effects/wakes/wakeD.xml</path>
+    <offsets>
+      <x-m> -2.32914 </x-m>
+      <y-m>  1.63978 </y-m>
+      <z-m> -2.32466 </z-m>
+      <pitch-deg> -45 </pitch-deg>
+    </offsets>
+  </model> 
+  
+</PropertyList>

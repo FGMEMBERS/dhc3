@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <title>DHC 3 Otter Amphibius</title>
+  <line>______________________________________________</line>
+  <key>
+    <name>d</name>
+    <desc>Open/Close crew doors</desc>
+  </key>
+  <key>
+    <name>D</name>
+    <desc>Open/Close passagers doors</desc>
+  </key>
+  <key>
+    <name>l</name>
+    <desc>up/down gouvernail</desc>
+  </key>
+  
+</PropertyList>

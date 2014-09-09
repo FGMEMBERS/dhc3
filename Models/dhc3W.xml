@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Le fuselage -->
+  <model>
+    <path>Aircraft/dhc3/Models/dhc3.xml</path>
+  </model>
+
+  <!-- Les roues -->
+  <model>
+    <path>Aircraft/dhc3/Models/wheels.xml</path>
+  </model>
+
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/dhc3/Models/shadowW.xml</path>
+    <offsets>
+      <x-m>  0.00 </x-m>
+      <y-m>  0.00 </y-m>
+      <z-m> -1.40 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
