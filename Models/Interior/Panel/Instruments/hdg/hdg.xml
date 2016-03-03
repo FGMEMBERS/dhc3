@@ -47,4 +47,32 @@
     </axis>
   </animation>
 
+  <animation>
+    <type>knob</type>
+    <object-name>HDG.knob</object-name>
+    <visible>true</visible>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>/autopilot/settings/heading-bug-deg</property>
+	<step>1</step>
+	<min>0</min>
+	<max>360</max>
+	<wrap>true</wrap>
+      </binding>
+    </action>
+
+    <decrease>
+      <binding>
+	<command>property-adjust</command>
+	<property>/autopilot/settings/heading-bug-deg</property>
+	<step>-2</step>
+	<min>0</min>
+	<max>360</max>
+	<wrap>true</wrap>
+      </binding>
+    </decrease>
+  </animation>
+  
 </PropertyList>
