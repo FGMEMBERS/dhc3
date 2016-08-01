@@ -6,13 +6,13 @@
     
     <model>
       <livery>
-        <name type="string">Royal Canadian Mounted Police High</name>
+        <name type="string">(High) Royal Canadian Mounted Police</name>
         <texture>Liveries/2048x2048/RCMP.png</texture>
-        <emission>
+        <specular>
           <red>   0.2 </red>
           <green> 0.2 </green>
           <blue>  0.2 </blue>
-        </emission>
+        </specular>
       </livery>
     </model>
     

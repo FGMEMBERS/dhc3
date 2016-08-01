@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<PropertyList include="dhc3-base.xml">
+<PropertyList include="Systems/dhc3-base.xml">
 
   <sim>
 
     <description>DHC 3 Otter with skis (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM), Laurent HAYVEL (Texture)</author>
+    
     <aircraft-version>0.1</aircraft-version>
     <status>0.1 Alpha</status>
+    
     <flight-model>yasim</flight-model>
-    <aero>dhc3S-yasim</aero>
+    <aero>Systems/dhc3S-yasim</aero>
+    
     <variant-of>dhc3W</variant-of>
 
     <rating>
@@ -38,8 +41,6 @@
 
   </sim>
 
-  <input>
-    <keyboard include="Systems/dhc3-keyboard.xml"/>
-  </input>
+  <input include="Systems/dhc3-keyboard.xml"/>
 
 </PropertyList>

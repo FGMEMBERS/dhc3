@@ -2,27 +2,10 @@
 
 <PropertyList>
 
-  <sim include="Systems/views.xml">
+  <sim include="views.xml">
  
-    <description>DHC 3 Otter (YASim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Pierre GEOFFROY (FDM), Laurent HAYVEL (Texture)</author>
-    <aircraft-version>0.1</aircraft-version>
-    <status>0.1 Alpha</status>
-
     <fuel-fraction>0.8</fuel-fraction>
   
-    <flaps>
-      <setting>0.000</setting>
-      <setting>0.125</setting>
-      <setting>0.250</setting>
-      <setting>0.375</setting>
-      <setting>0.500</setting>
-      <setting>0.625</setting>
-      <setting>0.750</setting>
-      <setting>0.875</setting>
-      <setting>1.000</setting>
-    </flaps>
-    
     <multiplay>
       <chat_display>1</chat_display>
       <generic> 
@@ -60,14 +43,18 @@
       </generic>
     </multiplay>
     
+    <flaps include="flaps.xml"/>
+    
     <hud>
       <font>led.txf</font>
     </hud>
 
-    <menubar include="Dialogs/dhc3-menu.xml"/>
+    <menubar include="../Dialogs/dhc3-menu.xml"/>
 
   </sim>
 
+  <controls include="controls.xml"/>
+  
   <nasal>
     <doors> 
       <file>Aircraft/dhc3/Nasal/doors.nas</file>
@@ -80,12 +67,12 @@
       <file>Aircraft/dhc3/Nasal/immat.nas</file>
     </immat>
     <zkv500>
-      <file>Aircraft/Instruments-3d/zkv500/ZKV500.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/MainScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/TurnpointScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/TaskScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/AirportScreens.nas</file>
-      <file>Aircraft/Instruments-3d/zkv500/zkv_dbg.nas</file>
+      <file>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/ZKV500.nas</file>
+      <file>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/MainScreens.nas</file>
+      <file>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/TurnpointScreens.nas</file>
+      <file>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/TaskScreens.nas</file>
+      <file>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/AirportScreens.nas</file>
+      <file>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/zkv_dbg.nas</file>
     </zkv500>
   </nasal>
 

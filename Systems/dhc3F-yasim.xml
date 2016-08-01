@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
-<!-- dhc3 : 2008 Emmanuel BARANGER
-                 Pierre GEOFFROY
-     Base : DHC-2 Beaver 2004 Syd Adams -->
-
+<!-- dhc3 : 2008 Emmanuel BARANGER / Pierre GEOFFROY 
+     Floats version
+     Base : DHC-2 Beaver 2004 Syd Adams
+     
+     Updated for FG 2016.x : 2016 Emmanuel BARANGER
+     
+     sources          : https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-3_Otter
+     
+     wingspan         :    58 ft 0 in      ( 17.69 m    )
+     length           :    41 ft 1 in      ( 12.80 m    )
+     height           :    12 ft 7 in      (  3.83 m    )
+     empty weight     :  4431 lb           (  2010 kg   )
+     engine           : 1 Pratt & Whitney R-1340-S1H1-G Wasp 9-cylinder air-cooled radial engine ( 600 hp )
+     Cruise speed     :   105 kt           (   195 km/h ) at sea level (econ cruise)
+     Maximum speed    :   139 kt           (   257 km/h )
+     Stall speed      :    50 kt           (    93 km/h )
+-->
 <airplane mass="4431" version="YASIM_VERSION_CURRENT">
 
   <approach speed="58" aoa="6" fuel="0.2" >
-    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.2"/>
-    <control-setting axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[0]/mixture" value="1"/>
+    <control-setting axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="1"/>
     <!-- 
     <solve-weight idx="0" weight="180"/>
-    <solve-weight idx="1" weight="0"/>
+    <solve-weight idx="1" weight="0"/> 
     -->
   </approach>
   
   <cruise speed="105" alt="6000" fuel="1.0" >
-    <control-setting  axis="/controls/engines/engine[0]/throttle" value="1.0"/>
-    <control-setting  axis="/controls/engines/engine[0]/mixture" value="1.0"/>
-    <control-setting  axis="/controls/engines/engine[0]/propeller-pitch" value="1.0"/>
+    <control-setting  axis="/controls/engines/engine[0]/throttle" value="0.7"/>
+    <control-setting  axis="/controls/engines/engine[0]/mixture" value="0.6"/>
+    <control-setting  axis="/controls/engines/engine[0]/propeller-pitch" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="0"/>
     <!--
     <solve-weight idx="0" weight="180"/>
-    <solve-weight idx="1" weight="0"/> 
+    <solve-weight idx="1" weight="0"/>
     -->
   </cruise>
   
   <cockpit x="3.748" y="0.344" z="0.618" />
 
-  <fuselage ax="5.886" ay="0" az="-0.261" bx="-5.397" by="0" bz="-0.004" width="1.799" taper="0.75" midpoint="0.25" />
-
-  <wing x="2.288" y="0.523" z="0.683" 
+  <fuselage ax=" 5.837" ay="0" az="-0.237" bx=" 3.835" by="0" bz="-0.055" width="1.760" taper="0.5" midpoint="1"/>
+  <fuselage ax=" 3.915" ay="0" az="-0.055" bx=" 0.031" by="0" bz="-0.063" width="1.760" taper="1.0" midpoint="1"/>
+  <fuselage ax=" 0.031" ay="0" az="-0.063" bx="-5.205" by="0" bz="-0.015" width="1.760" taper="0.2" midpoint="0"/>
+  
+  <wing x="2.288" y="0" z="0.683" 
         chord="2.0" 
-        length="8.125"
+        length="8.796"
         taper="1.0" 
         dihedral="3.5" 
         camber="0.13">
         <stall aoa="16" width="4" peak="1.5" />
-        <flap0 start="0.036" end="0.499" lift="1.6" drag="1.8"/>
-        <flap1 start="0.499" end="0.946" lift="1.3" drag="1.2"/>
+        <flap0 start="0.10" end="0.52" lift="1.6" drag="1.8"/>
+        <flap1 start="0.52" end="0.93" lift="1.3" drag="1.2"/>
 
         <control-input control="FLAP0" axis="/controls/flight/flaps"/>
         <control-output control="FLAP0" side="left" prop="/surface-positions/left-flap-pos-norm"/>
@@ -74,10 +91,14 @@
          <control-output prop="/surface-positions/rudder-pos-norm" control="FLAP0" min="1" max="-1"/>
   </vstab>
 
-  <!--
-       Engine    : Pratt & Whitney R1340 S1H1G Wasp
-       Propeller : Hamilton Standard 3D40-6511A-9
-       MTOM      : 8000 lbs
+  <!-- Engines   source       : https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-1340_Wasp
+
+                 name         : Pratt & Whitney R-1340-S1H1-G Wasp
+                 type         : Nine-cylinder single-row supercharged air-cooled radial engine
+                 power        :  600 hp at 2250 rpm at 6200 ft ( 1890 m )
+                 weight       :  930 lb ( 422 kg )
+                 compression  : 6.1
+                 Displacement : 1344 in3
   -->
   <propeller x="5.32" y="0" z="-0.300"
              radius="1.5"
@@ -255,12 +276,12 @@
   </gear>
 
   <!-- Fuel: Front 61 US gal - Center 102 US gal - Rear 50 US gal -->
-  <tank x="1.5" y="0" z="-0.7" capacity="367"/>
-  <tank x="0.0" y="0" z="-0.7" capacity="614"/>
+  <tank x=" 1.5" y="0" z="-0.7" capacity="367"/>
+  <tank x=" 0.0" y="0" z="-0.7" capacity="614"/>
   <tank x="-1.5" y="0" z="-0.7" capacity="301"/>
 
-  <!-- CG Theorique x=2.288 y=0 z=0.683 -->
-  <ballast x="6.054" y="0.001" z="-2" mass="600" />
+  <!-- Mass displacement -->
+  <ballast x="6.054" y="0.001" z="-2" mass="400" />
 
   <!--
   <weight x="0.75" y="0.0" z="-0.5" mass-prop="/sim/weight[0]/weight-lb"/>

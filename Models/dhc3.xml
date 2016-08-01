@@ -4,6 +4,11 @@
   
   <path>dhc3.ac</path>
   
+  <!-- MP sound call -->
+  <sound>
+    <path>Aircraft/dhc3/Sounds/mp-sound.xml</path>
+  </sound>
+  
   <nasal>
     <load>
       var livery_update = aircraft.livery_update.new("Aircraft/dhc3/Models/Liveries", 10);
@@ -111,11 +116,11 @@
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
-    <emission>
-      <red-prop>emission/red</red-prop>
-      <green-prop>emission/green</green-prop>
-      <blue-prop>emission/blue</blue-prop>
-    </emission>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
   </animation>
   
   <effect>
@@ -177,15 +182,8 @@
   
   <!-- Intérieur -->
   <model>
-    <name>Interieur</name>
     <path>Aircraft/dhc3/Models/Interior/interior.xml</path>
   </model>
-  
-  <!-- For Rembrandt -->
-  <animation>
-    <type>noshadow</type>
-    <object-name>Interieur</object-name>
-  </animation>
   
   <!-- Moteur -->
   <model>
@@ -344,9 +342,9 @@
     <property>surface-positions/elevator-pos-norm</property>
     <factor> 15 </factor>
     <center>
-      <x-m> 4.961 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.884 </z-m>
+      <x-m> 5.02534 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.88383 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -364,9 +362,9 @@
     <property>surface-positions/rudder-pos-norm</property>
     <factor> 20 </factor>
     <center>
-      <x-m> 5.408 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.857 </z-m>
+      <x-m> 5.48252 </x-m>
+      <y-m> 0.00000 </y-m>
+      <z-m> 0.90234 </z-m>
     </center>
     <axis>
       <x> 0 </x>

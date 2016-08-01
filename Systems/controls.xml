@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <gear>
+    <brake-parking>1</brake-parking>
+  </gear>
+  
+  <flight>
+    <elevator-trim type="double">0</elevator-trim>
+  </flight>
+  
+</PropertyList>
