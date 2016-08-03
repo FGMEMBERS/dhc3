@@ -3,6 +3,7 @@
 <PropertyList>
   
   <fx>
+    
     <crank>
       <name>cranking</name>
       <mode>looped</mode>
@@ -15,12 +16,12 @@
         <offset>0.5</offset>
       </volume>
       <position>
-        <x>-2.0</x>
-        <y>0</y>
-        <z>0</z>
+        <x> -2 </x>
+        <y>  0 </y>
+        <z>  0 </z>
       </position>
-      <reference-dist>5.0</reference-dist>
-      <max-dist>10.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </crank>
     
     <engine>
@@ -41,12 +42,12 @@
         <offset>0.2</offset>
       </pitch>
       <position>
-        <x>-2.0</x>
-        <y>0</y>
-        <z>0</z>
+        <x> -2 </x>
+        <y>  0 </y>
+        <z>  0 </z>
       </position>
-      <reference-dist>150.0</reference-dist>
-      <max-dist>1000.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </engine>
     
     <rumble>
@@ -164,8 +165,8 @@
         <y>0</y>
         <z>1</z>
       </position>
-      <reference-dist>2.5</reference-dist>
-      <max-dist>5.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </flap>
     
     <wind>
@@ -196,8 +197,8 @@
         <y>0</y>
         <z>0</z>
       </position>
-      <max-dist>2</max-dist>
-      <reference-dist>1</reference-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </wind>
     
     <stall>
@@ -214,9 +215,46 @@
         <y>0</y>
         <z>0</z>
       </position>
-      <reference-dist>2.0</reference-dist>
-      <max-dist>4.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </stall>
+    
+    <gear>
+      <name>gear</name>
+      <mode>in-transit</mode>
+      <path>Sounds/gear.wav</path>
+      <property>gear/gear[6]/position-norm</property>
+      <pitch>
+        <internal>dt_play</internal>
+        <offset>1.0</offset>
+        <factor>-0.001</factor>
+      </pitch>
+      <position>
+        <x>0.0</x>
+        <y>0</y>
+        <z>-2</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
+    
+    <gear>
+      <name>gear-lock</name>
+      <path>Sounds/gear-lck.wav</path>
+      <condition>
+        <equals>
+          <property>gear/gear[6]/position-norm</property>
+          <value>0</value>
+        </equals>
+      </condition>
+      <position>
+        <x>0.0</x>
+        <y>0</y>
+        <z>-2</z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </gear>
     
     <!--                  Toggle Switches                  -->     
     <switch>
@@ -234,8 +272,8 @@
         <y>0</y>
         <z>0</z>
       </position>
-      <reference-dist>2.0</reference-dist>
-      <max-dist>4.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </switch>
     
     <switch>
@@ -255,8 +293,8 @@
         <y>0</y>
         <z>0</z>
       </position>
-      <reference-dist>2.0</reference-dist>
-      <max-dist>4.0</max-dist>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </switch>
     
     <rain>
@@ -281,6 +319,8 @@
         <factor>0.001</factor>
         <offset>1.0</offset>
       </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
     </rain>
     
   </fx>

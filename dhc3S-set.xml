@@ -11,7 +11,7 @@
     <status>0.1 Alpha</status>
     
     <flight-model>yasim</flight-model>
-    <aero>Systems/dhc3S-yasim</aero>
+    <aero>Systems/FDM/dhc3S-yasim</aero>
     
     <variant-of>dhc3W</variant-of>
 
@@ -37,10 +37,10 @@
       <splash-texture>Aircraft/dhc3/Splashs/dhc3S-splash.png</splash-texture>
     </startup>
 
-    <help include="Systems/dhc3-help.xml"/>
+    <help include="Systems/Help/dhc3-help.xml"/>
 
   </sim>
 
-  <input include="Systems/dhc3-keyboard.xml"/>
+  <input include="Systems/Keyboard/dhc3-keyboard.xml"/>
 
 </PropertyList>

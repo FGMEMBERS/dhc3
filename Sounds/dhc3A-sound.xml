@@ -16,9 +16,9 @@
         <offset>0.5</offset>
       </volume>
       <position>
-        <x>-2.0</x>
-        <y>0</y>
-        <z>0</z>
+        <x> -2 </x>
+        <y>  0 </y>
+        <z>  0 </z>
       </position>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -42,9 +42,9 @@
         <offset>0.2</offset>
       </pitch>
       <position>
-        <x>-2.0</x>
-        <y>0</y>
-        <z>0</z>
+        <x> -2 </x>
+        <y>  0 </y>
+        <z>  0 </z>
       </position>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -125,11 +125,6 @@
           <property>/gear/gear[9]/wow</property>
         </or>
       </condition>
-      <volume>
-        <property>/velocities/speed-down-fps</property>
-        <factor>0.5</factor>
-        <max>1.0</max>
-      </volume>
       <volume>
         <property>/velocities/speed-down-fps</property>
         <factor>0.5</factor>
