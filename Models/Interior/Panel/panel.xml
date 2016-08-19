@@ -28,7 +28,7 @@
 
   <!-- GPS -->
   <model>
-    <path>Aircraft/Instruments-3d/zkv500/ZKV500.xml</path>
+    <path>Aircraft/dhc3/Models/Interior/Panel/Instruments/zkv500/ZKV500.xml</path>
     <offsets>
       <x-m>  0.090 </x-m>
       <y-m> -0.169 </y-m>

@@ -8,7 +8,8 @@
     <!-- Objets opaques -->
     <object-name>skiG</object-name>
     <object-name>skiD</object-name>
-
+    <object-name>skiA</object-name>
+    
     <!-- Objets transparents -->
   </animation>
 
@@ -16,7 +17,8 @@
     <type>material</type>
     <object-name>skiG</object-name>
     <object-name>skiD</object-name>
-
+    <object-name>skiA</object-name>
+    
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
     <texture>texture.png</texture>
@@ -58,4 +60,65 @@
     </offsets>
   </model>
 
+  <!-- pitch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>skiG</object-name>
+    <property>orientation/pitch-deg</property>
+    <condition>
+      <property>/gear/gear[0]/wow</property>
+    </condition>
+    <factor> -1 </factor>
+    <center>
+      <x-m> -3.76957 </x-m>
+      <y-m> -1.77981 </y-m>
+      <z-m> -1.79333 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>skiD</object-name>
+    <property>orientation/pitch-deg</property>
+    <condition>
+      <property>/gear/gear[1]/wow</property>
+    </condition>
+    <factor> -1 </factor>
+    <center>
+      <x-m> -3.76957 </x-m>
+      <y-m>  1.77981 </y-m>
+      <z-m> -1.79333 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>skiA</object-name>
+    <property>orientation/pitch-deg</property>
+    <condition>
+      <property>/gear/gear[2]/wow</property>
+    </condition>
+    <factor> -1 </factor>
+    <center>
+      <x-m>  5.15615 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.51508 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
 </PropertyList>
